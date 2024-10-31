@@ -1,8 +1,18 @@
+const path = require('path');
 const express = require('express');
 const app = express();
 
+const publicDirectory = path.join(__dirname, '../public');
+
+app.use(express.static(publicDirectory));
+
+app.set('view engine', 'hbs');
+
 app.get('/', function (req, res) {
-  res.send('<h1>Hello from Home page!</h1>')
+  res.render('index',{
+    title: 'Home',
+    name: 'Emine'
+  })
 })
 
 
