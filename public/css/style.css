@@ -71,8 +71,9 @@ main{
     background-color: #e4f1f1 ;
     width: auto;
     height: 280px;
+    border-radius: 10px;
 }
- .key h1{
+ .key h1,.soft h1{
     font-size: 25px;
     display: flex;
     padding-top: 10px;
@@ -96,5 +97,29 @@ main{
     margin: 8px 8px;
     border: 0.5px solid;
     border-radius: 20%;
-    box-shadow:  0.3em 0.3em 1em rgba(85, 34, 55, 0.6);;
+    box-shadow:  0.3em 0.3em 1em rgba(85, 34, 55, 0.6);
+ }
+
+ aside{
+    background-color: #e4f1f1 ;
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+ }
+
+ .info-soft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px 10px;
+ }
+
+ .info-soft p {
+    padding: 15px;
+    margin: 8px 8px;
+    border: 0.5px solid;
+    border-radius: 18%;
+    box-shadow:  0.3em 0.3em 1em rgba(85, 34, 55, 0.6);
  }
