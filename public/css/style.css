@@ -100,7 +100,7 @@ main{
     box-shadow:  0.3em 0.3em 1em rgba(85, 34, 55, 0.6);
  }
 
- aside{
+ .softSec{
     background-color: #e4f1f1 ;
     width: 700px;
     height: auto;
@@ -122,4 +122,23 @@ main{
     border: 0.5px solid;
     border-radius: 18%;
     box-shadow:  0.3em 0.3em 1em rgba(85, 34, 55, 0.6);
+ }
+
+ .lang{
+   position: absolute;
+   text-align: center;
+   top: 480px;
+   left: 820px;
+   background-color: #e4f1f1 ;
+   width: 200px;
+   height: auto;
+   border-radius: 10px;
+ }
+
+ .info-lang p {
+    padding: 2px;
+    margin: 24px 24px;
+    border-radius: 5px;
+    border: 0.5px solid;
+    box-shadow:  0.3em 0.3em 1em rgba(85, 34, 25, 0.6);
  }
