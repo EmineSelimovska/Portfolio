@@ -66,3 +66,35 @@ nav{
 .contact ion-icon{
     font-size: 100px;
 }
+
+main{
+    background-color: #e4f1f1 ;
+    width: auto;
+    height: 280px;
+}
+ .key h1{
+    font-size: 25px;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .info-key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 0px 15px;
+ }
+
+ .info-key p{
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    margin: 8px 8px;
+    border: 0.5px solid;
+    border-radius: 20%;
+    box-shadow:  0.3em 0.3em 1em rgba(85, 34, 55, 0.6);;
+ }
