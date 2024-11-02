@@ -1,5 +1,6 @@
 body {
-    background-color:pink;
+    background-image: url("../images/image.jpg");
+    aspect-ratio: 16/9;
     font-family: "Roboto", sans-serif;
 }
 
