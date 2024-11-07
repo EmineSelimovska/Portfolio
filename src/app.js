@@ -20,7 +20,7 @@ app.get('/skills', function (req, res) {
 })
 
 app.get('/education', function (req, res) {
-  res.send('<h1>Hello from the Education page!</h1>')
+  res.render('education')
 })
 
 app.get('/projects', function (req, res) {

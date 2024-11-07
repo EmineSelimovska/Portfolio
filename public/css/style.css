@@ -17,6 +17,10 @@ nav{
     color: azure;
 }
 
+.back a ion-icon{
+     font-size: 40px;
+     color: black;
+}
 .userPic{
     width: auto;
     height: 100%;
@@ -124,6 +128,12 @@ main{
     box-shadow:  0.3em 0.3em 1em rgba(85, 34, 55, 0.6);
  }
 
+ .info-key > p > ion-icon{
+    color: #c10528;
+    font-size: 30px;
+    width: 30px;
+ }
+
  .softSec{
     background-color: #e4f1f1 ;
     width: 700px;
@@ -151,8 +161,8 @@ main{
  .lang{
    position: absolute;
    text-align: center;
-   top: 480px;
-   left: 820px;
+   top: 380px;
+   left: 920px;
    background-color: #e4f1f1 ;
    width: 200px;
    height: auto;
