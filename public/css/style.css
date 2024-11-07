@@ -1,6 +1,6 @@
 body {
-    background-image: url("../images/image.jpg");
-    aspect-ratio: 16/9;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,0.6138830532212884) 100%);
     font-family: "Roboto", sans-serif;
 }
 
@@ -11,7 +11,7 @@ body {
 
 nav{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     height: 150px;
     color: azure;
@@ -70,11 +70,12 @@ nav{
     display: inline-block;
 }
 
-.home, .projects, .contact{
+.home, .projects, .contact, .education, .certification, .skills, .about{
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: text;
     
 }
 
@@ -86,7 +87,9 @@ nav{
 .skills ion-icon,
 .about ion-icon{
     font-size: 40px;
+    
 }
+
 
 main{
     background-color: #e4f1f1 ;
@@ -163,3 +166,57 @@ main{
     border: 0.5px solid;
     box-shadow:  0.3em 0.3em 1em rgba(85, 34, 25, 0.6);
  }
+
+ p {
+    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+  }
+  .me{
+    color: black;
+    font-size: 2.63rem;
+    text-transform: uppercase;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .animation {
+    height:50px;
+    overflow:hidden;
+    margin-left: 1rem;
+  }
+  
+  .animation > div > div {
+    padding: 0.25rem 0.75rem;
+    height:2.81rem;
+    margin-bottom: 2.81rem;
+    display:inline-block;
+  }
+  
+  .animation div:first-child {
+    animation: text-animation 8s infinite;
+  }
+  
+  .first div {
+    background-color:#20d2d8;
+  }
+  .second div {
+    background-color:#CD921E;
+  }
+  .third div {
+    background-color:#c10528;
+  }
+  
+  @keyframes text-animation {
+    0% {margin-top: 0;}
+    10% {margin-top: 0;}
+    20% {margin-top: -5.62rem;}
+    30% {margin-top: -5.62rem;}
+    40% {margin-top: -11.24rem;}
+    60% {margin-top: -11.24rem;}
+    70% {margin-top: -5.62rem;}
+    80% {margin-top: -5.62rem;}
+    90% {margin-top: 0;}
+    100% {margin-top: 0;}
+  }
+  
