@@ -1,0 +1,14 @@
+@import url("/css/style.css");
+
+body{
+    background-image: url();
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+

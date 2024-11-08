@@ -1,0 +1,33 @@
+@import url("/css/style.css");
+
+.educ{
+   
+    background-color: #e4f1f1;
+    padding: 5em;
+    border-radius: 10px;
+    
+  }
+
+  .educ p span {
+    color:rgb(60, 26, 92);
+    font-weight: bold;
+  }
+  
+  .educ h1, h2,p,span{
+    color: black;
+  animation-name: example;
+  animation-duration: 4s;   
+  animation-iteration-count: inherit;
+  }
+
+  @keyframes example {
+    from {color: rgb(252, 235, 235);}
+    to {color: black;}
+  }
+
+ 
+  .educ img{
+    width: 300px;
+    float: right;
+  }
+

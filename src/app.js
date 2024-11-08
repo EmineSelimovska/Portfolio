@@ -38,7 +38,7 @@ app.get('/about', function (req, res) {
   })
 
   app.get('/contact', function (req, res) {
-    res.send('<h1>Hello from the Contact page!</h1>')
+    res.render('contact')
   })
 
 app.listen(3000, () => {
