@@ -1,0 +1,9 @@
+@import url("/css/style.css");
+
+.project,.project-two{
+    background-color: white;
+    padding: 2em;
+    margin: 3em;
+    border-radius: 10px;
+}
+

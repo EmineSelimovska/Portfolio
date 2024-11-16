@@ -24,7 +24,7 @@ app.get('/education', function (req, res) {
 })
 
 app.get('/projects', function (req, res) {
-  res.send('<h1>Hello from the Projects page!</h1>')
+  res.render('projects');
 })
 
 
