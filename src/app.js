@@ -29,7 +29,7 @@ app.get('/projects', function (req, res) {
 
 
 app.get('/certification', function (req, res) {
-  res.send('<h1>Hello from the Certification page!</h1>')
+  res.render('certification')
 })
 
 
