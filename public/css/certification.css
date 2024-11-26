@@ -1,1 +1,8 @@
 @import url("/css/style.css");
+
+
+
+img{
+    width: 270px;
+    padding: 0.5em;
+}
