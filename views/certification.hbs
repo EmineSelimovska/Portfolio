@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
@@ -11,25 +10,83 @@
       rel="stylesheet"
       href="https://https://unpkg.com/ionicons@7.1.0/dist/css/ionicons.min.css"
     />
-    <link rel="stylesheet" href="/css/certification.css">
+    <link rel="stylesheet" href="/css/certification.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-         <div class="back"><a href="/"><ion-icon name="return-down-back-outline"></ion-icon></a></div>
-        <div class="img">
-            <img src="/images/JS Back-End - May 2023 - Certificate.jpeg" alt="">
-            <img src="/images/JS Applications - February 2023 - Certificate.jpeg" alt="">
-             <img src="/images/HTML & CSS - September 2023 - Certificate.jpeg" alt="">
-             <img src="/images/ReactJS - October 2023 - Certificate.jpeg" alt="">
-             <img src="/images/IT Career Booster - October 2023 - Certificate.jpeg" alt="">
-             <img src="/images/MySQL - January 2024 - Certificate.jpeg" alt="">
-             <img src="/images/Angular - February 2024 - Certificate.jpeg" alt="">
-             <img src="/images/Software Engineering and DevOps - May 2024 - Certificate.jpeg" alt="">
-             <img src="/images/Diploma for JavaScript Web Developer.jpeg" alt="">
-
+      <div class="back"><a href="/"><ion-icon
+            name="return-down-back-outline"
+          ></ion-icon></a></div>
+      <div class="img">
+        <div class="col">
+          <img src="/images/JS Back-End - May 2023 - Certificate.jpeg" alt=""
+          onclick="myFunction(this);" />
         </div>
+        <div class="col">
+          <img
+            src="/images/JS Applications - February 2023 - Certificate.jpeg"
+            alt=""
+            onclick="myFunction(this);"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="/images/HTML & CSS - September 2023 - Certificate.jpeg"
+            alt=""
+            onclick="myFunction(this);"
+          />
+        </div>
+        <div class="col">
+          <img src="/images/ReactJS - October 2023 - Certificate.jpeg" alt="" 
+          onclick="myFunction(this);"/>
+        </div>
+        <div class="col">
+          <img
+            src="/images/IT Career Booster - October 2023 - Certificate.jpeg"
+            alt=""
+            onclick="myFunction(this);"
+          />
+        </div>
+        <div class="col">
+          <img src="/images/MySQL - January 2024 - Certificate.jpeg" alt="" 
+          onclick="myFunction(this);"/>
+        </div>
+        <div class="col">
+          <img
+            src="/images/Angular - February 2024 - Certificate.jpeg"
+            alt=""
+            onclick="myFunction(this);"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="/images/Software Engineering and DevOps - May 2024 - Certificate.jpeg"
+            alt=""
+            onclick="myFunction(this);"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="/images/Diploma for Front-End разработчик c JavaScript.png"
+            alt=""
+            onclick="myFunction(this);"
+          />
+        </div>
+        <div class="col">
+          <img src="/images/Certificate-Intern.png" alt=""
+          onclick="myFunction(this);" />
+        </div>
+
+      </div>
+
+      <div class="click">
+         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="lastImg" style="width: 40%">
+  <div id="imgText"></div>
+      </div>
     </div>
-</body>
-<script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons.js"></script>
+  </body>
+  <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons.js"></script>
+  <script type="text/javascript" src="/js/gallery.js"></script>
 </html>
