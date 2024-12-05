@@ -1,5 +1,6 @@
 const path = require('path');
 const express = require('express');
+const fs = require('fs');
 const app = express();
 
 const publicDirectory = path.join(__dirname, '../public');
@@ -34,7 +35,9 @@ app.get('/certification', function (req, res) {
 
 
 app.get('/about', function (req, res) {
-    res.send('<h1>Hello from the About page!</h1>')
+ 
+    res.render('about')
+   
   })
 
   app.get('/contact', function (req, res) {
