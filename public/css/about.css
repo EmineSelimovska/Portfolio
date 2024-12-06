@@ -14,13 +14,14 @@
 }
 
 
- .video {
+ .content .video {
     text-align: center;
     margin-top: 20px;
-  }
    
-  .video video {
-    max-width: 60%;
-    height: auto;
+  }
+
+  iframe{
     border-radius: 10px;
   }
+   
+ 
