@@ -1,5 +1,11 @@
 @import url("/css/style.css");
 
+
+.back a ion-icon{
+  font-size: 40px;
+  color: black;
+}
+
 .project,.project-two, .project-three{
     background-color: white;
     padding: 2em;
@@ -35,8 +41,50 @@
     font-size: 30px;
   }
 
-  img{
+  .project-three img{
     width: auto;
-    height: 600px;
+    height: 850px;
+    display: block;
+    border-radius: 10px;
   }
 
+
+  @media (min-width: 300px) {
+    .container {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    .project, .project-two, .project-three {
+      font-size: 10px;
+    }
+    .project-three img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    .container {
+      max-width: 600px;
+    }
+    .project, .project-two, .project-three {
+      font-size: 16px;
+    }
+    .project-three img {
+     width: 100%;
+     height: auto;
+    }
+  }
+  
+  @media (min-width: 800px) {
+    .container {
+      max-width: 800px;
+    }
+    .project, .project-two, .project-three {
+      font-size: 18px;
+    }
+    .project-three img {
+      width: 100%;
+     height: auto;
+    }
+  }

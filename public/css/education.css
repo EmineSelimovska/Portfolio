@@ -3,6 +3,7 @@
 .educ{
    
     background-color: #e4f1f1;
+    margin: 0 auto;
     padding: 5em;
     border-radius: 10px;
     
@@ -32,25 +33,43 @@
   }
   
 
-  @media screen and (min-width:300px){
-    .educ{
-      
-      font-size: 12px;
+  @media  (min-width:300px){
+  
+    .educ {
+    margin: 0 auto;
+      padding: 2em;
     }
     .educ img{
-      width: 150px;
-      float:none;
+      width: 250px;
+      float: none;
     }
+
+
+  }
+
+  @media  (min-width:400px){
+   
+    .educ {
+      margin: 0 auto;
+      padding: 2em;
+    }
+    .educ img{
+      width: 250px;
+      float: none;
+    }
+
   }
 
 
-  @media screen and (min-width:600px){
+  @media (min-width:600px){
+   
     .educ{
-      
-      font-size: 12px;
+      margin: 0 auto;
+      font-size: 18px;
     }
     .educ img{
-      width: 150px;
+ 
+      height: 100%;
       float:right;
     }
   }
