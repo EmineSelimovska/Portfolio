@@ -291,6 +291,48 @@ main{
 }
 
 
+@media screen and (min-width:300px){
+  .container{
+    max-width: 300px;
+  }
+
+  nav{
+    height: 40px;
+  }
+  
+  .userPic{
+    height: 10%;
+   margin: 30px;
+    padding: 3px;
+  }
+
+  .home ion-icon, 
+  .projects ion-icon,
+  .contact ion-icon,
+  .education ion-icon,
+  .certification ion-icon,
+  .skills ion-icon,
+  .about ion-icon{
+      font-size: 16px;
+      
+  }
+
+  .me{
+   
+    font-size: 7px;
+  }
+
+  .animation{
+    height: 16px;
+    font-size: 7px;
+  }
+
+  .animation > div > div {
+    padding: 0.15rem 0.27rem;
+  }
+
+}
+
 
 @media screen and (min-width:600px){
   .container{
@@ -320,12 +362,13 @@ main{
 
   .me{
     
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .animation{
     height: 25px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
+ 
 }
