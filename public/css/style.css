@@ -291,3 +291,41 @@ main{
 }
 
 
+
+@media screen and (min-width:600px){
+  .container{
+    max-width: 600px;
+  }
+
+  nav{
+    height: 80px;
+  }
+  
+  .userPic{
+    height: 20%;
+    margin: 28px;
+    padding: 5px;
+  }
+
+  .home ion-icon, 
+  .projects ion-icon,
+  .contact ion-icon,
+  .education ion-icon,
+  .certification ion-icon,
+  .skills ion-icon,
+  .about ion-icon{
+      font-size: 27px;
+      
+  }
+
+  .me{
+    
+    font-size: 18px;
+  }
+
+  .animation{
+    height: 25px;
+    font-size: 18px;
+  }
+
+}
