@@ -30,4 +30,30 @@
     width: 300px;
     float: right;
   }
+  
+
+  @media screen and (min-width:300px){
+    .educ{
+      
+      font-size: 12px;
+    }
+    .educ img{
+      width: 150px;
+      float:none;
+    }
+  }
+
+
+  @media screen and (min-width:600px){
+    .educ{
+      
+      font-size: 12px;
+    }
+    .educ img{
+      width: 150px;
+      float:right;
+    }
+  }
+  
+
 
