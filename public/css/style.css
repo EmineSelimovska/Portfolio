@@ -387,8 +387,8 @@ main{
   
   .userPic{
     height: 20%;
-    margin: 28px;
-    padding: 5px;
+    margin: 26px;
+    padding: 2px;
   }
 
   .home ion-icon, 
@@ -404,11 +404,50 @@ main{
 
   .me{
     
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .animation{
-    height: 25px;
+    height: 28px;
+    font-size: 16px;
+  }
+
+ 
+}
+
+@media (min-width:800px) and (max-width:1024px){
+  .container{
+    max-width: 1024px;
+  }
+
+  nav{
+    height: 80px;
+  }
+  
+  .userPic{
+    height: 20%;
+    margin: 26px;
+    padding: 2px;
+  }
+
+  .home ion-icon, 
+  .projects ion-icon,
+  .contact ion-icon,
+  .education ion-icon,
+  .certification ion-icon,
+  .skills ion-icon,
+  .about ion-icon{
+      font-size: 27px;
+      
+  }
+
+  .me{
+    
+    font-size: 14px;
+  }
+
+  .animation{
+    height: 28px;
     font-size: 16px;
   }
 

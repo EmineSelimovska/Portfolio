@@ -47,3 +47,65 @@
     font-size: 35px;
     cursor: pointer;
   }
+
+  @media  (min-width:300px) and (max-width:400px){
+    .container{
+      max-width: 400px;
+    }
+    .col{
+      width: 10%;
+      padding: 10px;
+    }
+
+    .col img{
+      width: auto;
+      height: 120px;
+    }
+    .closebtn{
+      font-size: 10px;
+      top: -3px;
+      right: 35px;
+    }
+   
+
+  }
+
+  @media  (min-width:400px) and (max-width:600px){
+    .container{
+      max-width: 600px;
+    }
+    .col{
+      width: 10%;
+      padding: 5px;
+    }
+
+    .col img{
+      width: auto;
+      height: 100px;
+    }
+
+    .closebtn{
+      font-size: 12px;
+      top: -3px;
+      right: 60px;
+    }
+
+  }
+
+  @media  (min-width:600px) and (max-width:800px){
+    .container{
+      max-width: 800px;
+    }
+    .col{
+      width: 10%;
+      padding: 10px;
+    }
+
+    .col img{
+      width: auto;
+      height: 100px;
+    }
+    .closebtn{
+      right: 280px;
+    }
+  }
