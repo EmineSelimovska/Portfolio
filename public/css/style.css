@@ -169,7 +169,7 @@ main{
    position: absolute;
    text-align: center;
    top: 380px;
-   left: 920px;
+   left: 1220px;
    background-color: #e4f1f1 ;
    width: 200px;
    height: auto;
@@ -313,7 +313,7 @@ main{
   .certification ion-icon,
   .skills ion-icon,
   .about ion-icon{
-      font-size: 16px;
+      font-size: 12px;
       
   }
 
@@ -321,6 +321,60 @@ main{
    
     font-size: 7px;
   }
+
+  main{
+    margin: 0 auto;
+   width: auto;
+   height: 350px;
+
+  }
+
+  .key h1,.soft h1{
+    font-size: 15px;
+    
+    padding-top: 3px;
+    
+ }
+
+ .info-key {
+  gap: 30px;
+  padding: 0px 3px;
+}
+
+.info-key > p > ion-icon{
+
+  font-size: 20px;
+  width: 30px;
+}
+
+.softSec{
+  width: 360px;
+
+}
+
+.info-soft {
+  gap: 30px;
+  padding: 5px 5px;
+}
+
+.info-soft p{
+  padding: 5px;
+  text-align: center;
+}
+.lang{
+  top: 920px;
+  left: 100px;
+  width: 180px;
+  height: auto;
+
+}
+
+.info-lang p {
+  padding: 1px;
+  margin: 15px 15px;
+
+ 
+}
 
   .animation{
     height: 16px;
@@ -363,6 +417,60 @@ main{
    
     font-size: 7px;
   }
+
+  main{
+    margin: 0 auto;
+   width: auto;
+   height: 350px;
+
+  }
+
+  .key h1,.soft h1{
+    font-size: 15px;
+    
+    padding-top: 3px;
+    
+ }
+
+ .info-key {
+  gap: 30px;
+  padding: 0px 3px;
+}
+
+.info-key > p > ion-icon{
+
+  font-size: 20px;
+  width: 30px;
+}
+
+.softSec{
+  width: 350px;
+ margin: 0 auto;
+}
+
+.info-soft {
+  gap: 20px;
+  padding: 5px 5px;
+}
+
+.info-soft p{
+  padding: 5px;
+  text-align: center;
+}
+.lang{
+  top: 880px;
+  left: 100px;
+  width: 200px;
+  height: auto;
+
+}
+
+.info-lang p {
+  padding: 1px;
+  margin: 15px 15px;
+
+ 
+}
 
   .animation{
     height: 16px;
@@ -407,6 +515,53 @@ main{
     font-size: 14px;
   }
 
+
+  main{
+    margin: 0 auto;
+  height: 280px;
+  }
+
+  .key h1,.soft h1{
+    font-size: 15px;
+    
+    padding-top: 3px;
+    
+ }
+
+ .info-key {
+  gap: 40px;
+  padding: 3px 3px;
+}
+
+.info-key > p > ion-icon{
+
+  font-size: 20px;
+  width: 30px;
+}
+
+.softSec{
+  width: 350px;
+ 
+}
+
+.info-soft {
+  gap: 20px;
+  padding: 5px 5px;
+}
+
+.info-soft p{
+  padding: 5px;
+  text-align: center;
+}
+
+.lang{
+ 
+  
+  left: 460px;
+ 
+}
+
+
   .animation{
     height: 28px;
     font-size: 16px;
@@ -445,6 +600,52 @@ main{
     
     font-size: 14px;
   }
+
+  main{
+    margin: 0 auto;
+  height: 250px;
+  }
+
+  .key h1,.soft h1{
+    font-size: 20px;
+    
+    padding-top: 3px;
+    
+ }
+
+ .info-key {
+  gap: 85px;
+  padding: 0px 3px;
+}
+
+.info-key > p > ion-icon{
+
+  font-size: 30px;
+  width: 30px;
+}
+
+.softSec{
+  width: 350px;
+}
+
+.info-soft {
+  gap: 20px;
+  padding: 5px 5px;
+}
+
+.info-soft p{
+  padding: 5px;
+  text-align: center;
+}
+
+.lang{
+ 
+  
+  left: 460px;
+ 
+}
+
+
 
   .animation{
     height: 28px;
