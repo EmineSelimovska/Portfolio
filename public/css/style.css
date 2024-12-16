@@ -572,6 +572,7 @@ main{
 
 @media (min-width:800px) and (max-width:1024px){
   .container{
+    min-width: 800px;
     max-width: 1024px;
   }
 
@@ -641,7 +642,7 @@ main{
 .lang{
  
   
-  left: 460px;
+  left: 400px;
  
 }
 

@@ -11,9 +11,6 @@
 
 .content h1{
   color:  rgb(116, 22, 92)
-  
-
-
 }
 
 
@@ -26,5 +23,62 @@
   iframe{
     border-radius: 10px;
   }
+
+
+  @media  (min-width:300px) and (max-width:400px){
+    .conteiner{
+      max-width: 400px;
+     
+    }
+    .content{
+      margin: 0 auto;
+     width: 300px;
+     padding: 16px;
+     font-size: 16px;
+      
+    }
+
+    iframe{
+     height: 200px;
+      width: 300px;
+    }
+  }
+
+  @media  (min-width:400px) and (max-width:600px){
+    .conteiner{
+      max-width: 600px;
+    }
+
+    .content{
+      margin: 0 auto;
+     width: 360px;
+     padding: 16px;
+     font-size: 16px;
+      
+    }
+
+    iframe{
+      height: 200px;
+       width: 300px;
+     }
+  }
    
+  @media  (min-width:600px) and (max-width:800px){
+    .conteiner{
+      max-width: 800px;
+    }
+
+    .content{
+      margin: 0 auto;
+     width: 460px;
+     padding: 16px;
+     font-size: 16px;
+      
+    }
+
+    iframe{
+      height: 300px;
+       width: 400px;
+     }
+  }
  
