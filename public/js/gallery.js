@@ -5,5 +5,5 @@ function myFunction(imgs) {
     imgText.innerHTML = imgs.alt;
     lastImg.parentElement.style.display = "block";
 
-    lastImg.parentElement.style.paddingLeft = "300px"
+   
   }

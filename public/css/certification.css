@@ -1,111 +1,138 @@
 @import url("/css/style.css");
 
-
-.col{
-    float: left;
-    width: 10%;
-    padding: 10px;
+.col {
+  float: left;
+  width: 10%;
+  padding: 10px;
 }
-.col img{
+.col img {
   width: 100px;
   height: 200px;
-   opacity: 0.8; 
-   cursor: pointer; 
+  opacity: 0.8;
+  cursor: pointer;
 }
 
-
 .col img:hover {
-    opacity: 1;
+  opacity: 1;
+}
+
+.img:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.click {
+  position: relative;
+  display: none;
+}
+
+#imgText {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.closebtn {
+  position: absolute;
+  top: 1px;
+  right: 525px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.click {
+  display: none;
+  padding-left: 300px;
+  transition: all 0.3s ease;
+}
+
+#lastImg {
+  width: 40%; 
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .container {
+    max-width: 400px;
+  }
+  .col {
+    width: 10%;
+    padding: 10px;
   }
 
-  .img:after {
-    content: "";
-    display: table;
-    clear: both;
-    
+  .col img {
+    width: auto;
+    height: 120px;
   }
-  .click{
-    position: relative;
-    display: none;
-  
+  .closebtn {
+    font-size: 10px;
+    top: -3px;
+    right: 210px;
   }
 
-  #imgText{
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
+  .click {
+    padding-left: 10px; 
+  }
+
+  #lastImg {
+    width: 80%; 
+  }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .container {
+    max-width: 600px;
+  }
+  .col {
+    width: 10%;
+    padding: 5px;
+  }
+
+  .col img {
+    width: auto;
+    height: 100px;
   }
 
   .closebtn {
-    position: absolute;
-    top: 1px;
-    right: 525px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
+    font-size: 12px;
+    top: -3px;
+    right: 235px;
+  }
+  .click {
+    padding-left: 10px; 
   }
 
-  @media  (min-width:300px) and (max-width:400px){
-    .container{
-      max-width: 400px;
-    }
-    .col{
-      width: 10%;
-      padding: 10px;
-    }
+  #lastImg {
+    width: 80%; 
+  }
+}
 
-    .col img{
-      width: auto;
-      height: 120px;
-    }
-    .closebtn{
-      font-size: 10px;
-      top: -3px;
-      right: 35px;
-    }
-   
-
+@media (min-width: 600px) and (max-width: 800px) {
+  .container {
+    max-width: 800px;
+  }
+  .col {
+    width: 10%;
+    padding: 7px;
   }
 
-  @media  (min-width:400px) and (max-width:600px){
-    .container{
-      max-width: 600px;
-    }
-    .col{
-      width: 10%;
-      padding: 5px;
-    }
-
-    .col img{
-      width: auto;
-      height: 100px;
-    }
-
-    .closebtn{
-      font-size: 12px;
-      top: -3px;
-      right: 60px;
-    }
-
+  .col img {
+    width: auto;
+    height: 100px;
+  }
+  .closebtn {
+    right: 365px;
   }
 
-  @media  (min-width:600px) and (max-width:800px){
-    .container{
-      max-width: 800px;
-    }
-    .col{
-      width: 10%;
-      padding: 10px;
-    }
-
-    .col img{
-      width: auto;
-      height: 100px;
-    }
-    .closebtn{
-      right: 280px;
-    }
+  .click {
+    padding-left: 10px; 
   }
+
+  #lastImg {
+    padding-left: 80px;
+    width: 70%; 
+  }
+}

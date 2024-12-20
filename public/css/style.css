@@ -169,7 +169,7 @@ main{
    position: absolute;
    text-align: center;
    top: 380px;
-   left: 880px;
+   left: 1080px;
    background-color: #e4f1f1 ;
    width: 200px;
    height: auto;
@@ -337,8 +337,8 @@ main{
  }
 
  .info-key {
-  gap: 30px;
-  padding: 0px 3px;
+  gap: 19px;
+  padding: 0px 2px;
 }
 
 .info-key > p > ion-icon{
@@ -572,7 +572,7 @@ main{
 
 @media (min-width:800px) and (max-width:1024px){
   .container{
-    min-width: 800px;
+    
     max-width: 1024px;
   }
 
@@ -615,7 +615,7 @@ main{
  }
 
  .info-key {
-  gap: 85px;
+  gap: 76px;
   padding: 0px 3px;
 }
 
@@ -642,7 +642,7 @@ main{
 .lang{
  
   
-  left: 400px;
+ left: 400px;
  
 }
 

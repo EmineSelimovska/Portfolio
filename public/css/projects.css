@@ -59,7 +59,9 @@
     }
     .project-three img {
       width: 100%;
-      height: auto;
+     height: auto;
+     display: block;
+     margin: 10px auto;
     }
   }
   
@@ -73,6 +75,8 @@
     .project-three img {
      width: 100%;
      height: auto;
+     display: block;
+     margin: 10px auto;
     }
   }
   
@@ -86,5 +90,7 @@
     .project-three img {
       width: 100%;
      height: auto;
+     display: block;
+     margin: 10px auto;
     }
   }
