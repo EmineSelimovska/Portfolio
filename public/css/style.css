@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background: rgb(63, 94, 251);
   background: radial-gradient(
@@ -6,36 +12,18 @@ body {
     rgba(138, 49, 67, 0.614) 100%
   );
   font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
   overflow-x: hidden;
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 100%;
+  padding: 0 12px;
   margin: 0 auto;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 150px;
-  color: azure;
-  gap: 24px;
-  padding: 16px;
 }
 
 .back a ion-icon {
   font-size: 40px;
   color: black;
-}
-.userPic {
-  width: auto;
-  height: 30%;
-  margin: 18px;
-  padding: 10px;
-  border: 3px solid rgb(83, 5, 70);
-  border-radius: 10px 100px / 120px;
 }
 
 .userDetails {
@@ -58,25 +46,26 @@ nav {
   display: inline-block;
 }
 
-.nav-item {
-  flex: 1;
-  min-width: 90px;
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  gap: 10px;
+  padding: 16px;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  min-width: 56px;
+  min-height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-item ion-icon {
-  font-size: 40px;
+   font-size: 28px;
   color: rgb(83, 19, 83);
-}
-
-.nav-item:hover {
-  transform: translateY(-4px);
-  background-color: rgba(83, 19, 83, 0.08);
-  border-radius: 10px;
 }
 
 .nav-item a {
@@ -94,144 +83,79 @@ nav {
   transition: opacity 0.3s ease;
 }
 
-.nav-item:hover span {
-  opacity: 1;
-}
-
-
-main {
-  background-color: #e4f1f1;
-  width: auto;
-  height: 280px;
-  border-radius: 10px;
-}
-.key h1,
-.soft h1 {
-  font-size: 25px;
-  display: flex;
-  padding-top: 10px;
-  align-items: center;
-  justify-content: center;
-}
-
-.info-key {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 100px;
-  padding: 0px 6px;
-}
-
-.info-key p {
-  display: flex;
-  text-align: center;
-  padding: 6px;
-  margin: 8px 8px;
-  border: 0.5px solid;
-  border-radius: 20%;
-  box-shadow: 0.3em 0.3em 1em rgba(85, 34, 55, 0.6);
-}
-
-.info-key > p > ion-icon {
-  color: #c10528;
-  font-size: 30px;
-  width: 50px;
-}
-
-.softSec {
-  background-color: #e4f1f1;
-  width: 700px;
-  height: auto;
-  border-radius: 10px;
-}
-
-.info-soft {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 20px 10px;
-}
-
-.info-soft p {
-  padding: 15px;
-  margin: 8px 8px;
-  border: 0.5px solid;
-  border-radius: 18%;
-  box-shadow: 0.3em 0.3em 1em rgba(85, 34, 55, 0.6);
-}
-
-.lang {
-  position: absolute;
-  text-align: center;
-  top: 380px;
-  left: 1080px;
-  background-color: #e4f1f1;
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
-}
-
-.info-lang p {
-  padding: 2px;
-  margin: 24px 24px;
-  border-radius: 5px;
-  border: 0.5px solid;
-  box-shadow: 0.3em 0.3em 1em rgba(85, 34, 25, 0.6);
-}
-
-p {
-  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
-    0 0 3px rgba(255, 255, 255, 0.3);
-}
 .me {
-  color: black;
-  font-size: 2.63rem;
-  text-transform: uppercase;
-  height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  min-height: 100dvh;
+  font-size: 24px;
 }
 
 .animation {
-  height: 2.81rem + 0.25rem*2; /* padding горе и долу */
-  height: 3.31rem; 
   overflow: hidden;
-  margin-left: 1rem;
+  font-size: 20px;
+  line-height: 1.4;
+  height: 1.4em;
+  width: 100%;
+  position: relative;
+  margin: 0.5rem 0;
 }
 
-.animation > div > div {
-  padding: 0.25rem 0.75rem;
-  height: 2.81rem;
-  margin-bottom: 0;
-  display: inline-block;
+.animation-inner {
+  display: flex;
+  flex-direction: column;
+  animation: text-animation 6s linear infinite;
 }
 
-.animation div:first-child {
-  animation: text-animation 8s infinite;
+.animation-inner > div {
+  height: 1.4em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25em 0.5em;
+  border-radius: 6px;
+  white-space: nowrap;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-.first div {
-  background-color: #20d2d8;
+.animation-inner > div:nth-child(1) {
+  background-color: rgba(32, 210, 216, 0.7);
 }
-.second div {
-  background-color: #cd921e;
+.animation-inner > div:nth-child(2) {
+  background-color: rgba(217, 162, 60, 0.7);
 }
-.third div {
-  background-color: #c10528;
+.animation-inner > div:nth-child(3) {
+  background-color: rgba(209, 50, 76, 0.7);
 }
-
 
 @keyframes text-animation {
-  0%, 10% { transform: translateY(0); }
-  20%, 30% { transform: translateY(-100%); }
-  40%, 60% { transform: translateY(-200%); }
-  70%, 80% { transform: translateY(-100%); }
-  90%, 100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  33.33% {
+    transform: translateY(-1.4em);
+  }
+  66.66% {
+    transform: translateY(-2.8em);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
+
+.userPic {
+  width: 150px;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border: 3px solid rgb(83, 5, 70);
+  border-radius: 10px 100px/120px;
+}
+
 .cube {
   position: absolute;
   top: 80vh;
@@ -283,327 +207,80 @@ p {
   }
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
-  .container {
-    max-width: 400px;
+@media (hover: hover) {
+  .nav-item:hover {
+    transform: translateY(-4px);
+    background-color: rgba(83, 19, 83, 0.08);
   }
+}
 
+@media (max-width: 600px) {
   nav {
-    height: 40px;
+    gap: 6px;
+    justify-content: center;
+  }
+  .nav-item ion-icon {
+    font-size: 20px;
   }
 
+   .animation {
+    font-size: 16px;
+    height: 1.4em; 
+  }
   .userPic {
-    height: 10%;
-    margin: 30px;
-    padding: 3px;
+    width: 110px; 
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    gap: 12px;
+    justify-content: space-around;
   }
 
-  .home ion-icon,
-  .projects ion-icon,
-  .contact ion-icon,
-  .education ion-icon,
-  .certification ion-icon,
-  .skills ion-icon,
-  .about ion-icon {
-    font-size: 12px;
+  .nav-item ion-icon {
+    font-size: 22px;
   }
 
   .me {
-    font-size: 7px;
+    font-size: 26px;
+    justify-content: center;
   }
 
-  main {
-    margin: 0 auto;
+  .userPic {
+    width: 130px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .me {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: left;
+  }
+
+  nav {
+    justify-content: space-around;
+    gap: 24px;
+  }
+
+  .nav-item ion-icon {
+    font-size: 40px;
+  }
+
+  .animation {
     width: auto;
-    height: 350px;
+    margin: 0;
   }
 
-  .key h1,
-  .soft h1 {
-    font-size: 15px;
-
-    padding-top: 3px;
+  .animation-inner > div {
+    margin: 0;
   }
 
-  .info-key {
-    gap: 19px;
-    padding: 0px 2px;
-  }
-
-  .info-key > p > ion-icon {
-    font-size: 20px;
-    width: 30px;
-  }
-
-  .softSec {
-    width: 360px;
-  }
-
-  .info-soft {
-    gap: 30px;
-    padding: 5px 5px;
-  }
-
-  .info-soft p {
-    padding: 5px;
-    text-align: center;
-  }
-  .lang {
-    top: 920px;
-    left: 100px;
+  .userPic {
     width: 180px;
-    height: auto;
-  }
-
-  .info-lang p {
-    padding: 1px;
-    margin: 15px 15px;
-  }
-
-  .animation {
-    height: 16px;
-    font-size: 7px;
-  }
-
-  .animation > div > div {
-    padding: 0.15rem 0.27rem;
-  }
-}
-
-@media (min-width: 400px) and (max-width: 600px) {
-  .container {
-    max-width: 600px;
-  }
-
-  nav {
-    height: 40px;
-  }
-
-  .userPic {
-    height: 10%;
-    margin: 30px;
-    padding: 3px;
-  }
-
-  .home ion-icon,
-  .projects ion-icon,
-  .contact ion-icon,
-  .education ion-icon,
-  .certification ion-icon,
-  .skills ion-icon,
-  .about ion-icon {
-    font-size: 16px;
-  }
-
-  .me {
-    font-size: 7px;
-  }
-
-  main {
-    margin: 0 auto;
-    width: auto;
-    height: 350px;
-  }
-
-  .key h1,
-  .soft h1 {
-    font-size: 15px;
-
-    padding-top: 3px;
-  }
-
-  .info-key {
-    gap: 30px;
-    padding: 0px 3px;
-  }
-
-  .info-key > p > ion-icon {
-    font-size: 20px;
-    width: 30px;
-  }
-
-  .softSec {
-    width: 350px;
-    margin: 0 auto;
-  }
-
-  .info-soft {
-    gap: 20px;
-    padding: 5px 5px;
-  }
-
-  .info-soft p {
-    padding: 5px;
-    text-align: center;
-  }
-  .lang {
-    top: 880px;
-    left: 100px;
-    width: 200px;
-    height: auto;
-  }
-
-  .info-lang p {
-    padding: 1px;
-    margin: 15px 15px;
-  }
-
-  .animation {
-    height: 16px;
-    font-size: 7px;
-  }
-
-  .animation > div > div {
-    padding: 0.15rem 0.27rem;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 800px) {
-  .container {
-    max-width: 800px;
-  }
-
-  nav {
-    height: 80px;
-  }
-
-  .userPic {
-    height: 20%;
-    margin: 26px;
-    padding: 2px;
-  }
-
-  .home ion-icon,
-  .projects ion-icon,
-  .contact ion-icon,
-  .education ion-icon,
-  .certification ion-icon,
-  .skills ion-icon,
-  .about ion-icon {
-    font-size: 27px;
-  }
-
-  .me {
-    font-size: 14px;
-  }
-
-  main {
-    margin: 0 auto;
-    height: 280px;
-  }
-
-  .key h1,
-  .soft h1 {
-    font-size: 15px;
-
-    padding-top: 3px;
-  }
-
-  .info-key {
-    gap: 40px;
-    padding: 3px 3px;
-  }
-
-  .info-key > p > ion-icon {
-    font-size: 20px;
-    width: 30px;
-  }
-
-  .softSec {
-    width: 350px;
-  }
-
-  .info-soft {
-    gap: 20px;
-    padding: 5px 5px;
-  }
-
-  .info-soft p {
-    padding: 5px;
-    text-align: center;
-  }
-
-  .lang {
-    left: 460px;
-  }
-
-  .animation {
-    height: 28px;
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 800px) and (max-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-
-  nav {
-    height: 80px;
-  }
-
-  .userPic {
-    height: 20%;
-    margin: 26px;
-    padding: 2px;
-  }
-
-  .home ion-icon,
-  .projects ion-icon,
-  .contact ion-icon,
-  .education ion-icon,
-  .certification ion-icon,
-  .skills ion-icon,
-  .about ion-icon {
-    font-size: 27px;
-  }
-
-  .me {
-    font-size: 14px;
-  }
-
-  main {
-    margin: 0 auto;
-    height: 250px;
-  }
-
-  .key h1,
-  .soft h1 {
-    font-size: 20px;
-
-    padding-top: 3px;
-  }
-
-  .info-key {
-    gap: 76px;
-    padding: 0px 3px;
-  }
-
-  .info-key > p > ion-icon {
-    font-size: 30px;
-    width: 30px;
-  }
-
-  .softSec {
-    width: 350px;
-  }
-
-  .info-soft {
-    gap: 20px;
-    padding: 5px 5px;
-  }
-
-  .info-soft p {
-    padding: 5px;
-    text-align: center;
-  }
-
-  .lang {
-    left: 400px;
-  }
-
-  .animation {
-    height: 28px;
-    font-size: 16px;
+    margin: 0;
   }
 }
