@@ -1,4 +1,11 @@
+.cerf{
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
+}
 
 .col {
   float: left;
@@ -55,9 +62,7 @@
 }
 
 @media (min-width: 300px) and (max-width: 400px) {
-  .container {
-    max-width: 400px;
-  }
+ 
   .col {
     width: 10%;
     padding: 10px;
@@ -83,9 +88,7 @@
 }
 
 @media (min-width: 400px) and (max-width: 600px) {
-  .container {
-    max-width: 600px;
-  }
+
   .col {
     width: 10%;
     padding: 5px;
@@ -111,9 +114,7 @@
 }
 
 @media (min-width: 600px) and (max-width: 800px) {
-  .container {
-    max-width: 800px;
-  }
+ 
   .col {
     width: 10%;
     padding: 7px;
