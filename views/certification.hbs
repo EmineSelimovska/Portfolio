@@ -92,17 +92,30 @@
             />
           </div>
 
-        </div>
+            <div class="col">
+            <img
+              src="/images/Figma.jpeg"
+              alt=""
+              onclick="myFunction(this);"
+            />
+          </div>
 
-        <div class="click">
-          <span
-            onclick="this.parentElement.style.display='none'"
-            class="closebtn"
-          >&times;</span>
-          <img id="lastImg" style="width: 40%" />
-          <div id="imgText"></div>
+            <div class="col">
+            <img
+              src="/images/English.jpeg"
+              alt=""
+              onclick="myFunction(this);"
+            />
+          </div>
+
         </div>
       </div>
+
+        <div class="click" id="popup">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="lastImg"/>
+          <div id="imgText"></div>
+        </div>
     </div>
   </body>
   <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons.js"></script>

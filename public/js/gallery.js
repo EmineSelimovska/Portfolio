@@ -1,9 +1,7 @@
-function myFunction(imgs) {
-    var lastImg = document.getElementById("lastImg");
-    var imgText = document.getElementById("imgText");
-    lastImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
-    lastImg.parentElement.style.display = "block";
-
-   
-  }
+function myFunction(img) {
+  var popup = document.querySelector(".click");
+  var popupImg = document.getElementById("lastImg");
+  
+  popup.style.display = "flex";  
+  popupImg.src = img.src;
+}
