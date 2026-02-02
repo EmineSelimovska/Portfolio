@@ -28,6 +28,10 @@ app.get('/projects', function (req, res) {
   res.render('projects');
 })
 
+app.get('/experience', function (req, res) {
+  res.render('experience');
+})
+
 
 app.get('/certification', function (req, res) {
   res.render('certification')
