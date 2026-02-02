@@ -39,6 +39,19 @@
   font-weight: 600;
 }
 
+.project-card h3 {
+  font-size: 1.2rem;
+  color: #ccc6d8; 
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.project-card span {
+  color: #bfb8c5; 
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  display: block;
+}
 
 .project-card .tools h2,
 .project-card .func h2{
@@ -79,6 +92,9 @@
   }
   .project-card h1 {
     font-size: 1.2rem;
+  }
+  .project-card h3 {
+    font-size: 1rem;
   }
   .project-card .tools h2,
   .project-card .func h2 {
