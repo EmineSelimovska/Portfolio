@@ -1,0 +1,118 @@
+.contact-section {
+  text-align: center;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem auto;
+  font-family: 'Roboto', sans-serif;
+  color: #f0f0f0;
+  background-color: rgba(20,20,30,0.3); 
+  border-radius: 20px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5); 
+}
+
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #9885c4;
+  text-shadow: 0 0 10px rgba(161,140,209,0.7);
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto 2rem;
+  justify-items: center;
+}
+
+
+.contact-card {
+  width: 100%;
+  max-width: 200px;
+  background-color: rgba(32, 34, 50, 0.85); 
+  border-radius: 20px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 25px rgba(32, 210, 216, 0.3), 0 0 15px rgba(32, 210, 216, 0.1) inset; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+
+.contact-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(32, 210, 216, 0.6), 0 0 25px rgba(32, 210, 216, 0.3) inset;
+  background-color: rgba(32, 34, 50, 0.95);
+}
+
+
+.contact-card a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #20d2d8;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 0 0 6px rgba(32,210,216,0.4);
+}
+
+.contact-card a span {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #f0f0f0;
+}
+
+.contact-card a:hover {
+  color: #cd92ff;
+  transform: scale(1.15);
+  text-shadow: 0 0 12px rgba(205,146,255,0.8);
+}
+
+@media(max-width: 768px){
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media(max-width: 480px){
+  .contact-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .contact-section h1 {
+    font-size: 2rem;
+  }
+
+  .contact-section p {
+    font-size: 1rem;
+  }
+
+  .contact-card a {
+    font-size: 1.8rem;
+  }
+
+  .contact-card span {
+    font-size: 0.8rem;
+  }
+
+
+}
+
+

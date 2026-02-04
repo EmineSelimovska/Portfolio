@@ -1,0 +1,104 @@
+
+
+.back a ion-icon{
+  font-size: 40px;
+  color: black;
+}
+
+.project-content{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.project-card {
+  padding: 30px 25px;
+  background: rgba(28, 34, 49, 0.85); 
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25); 
+  border-left: 4px solid rgba(161,140,209,0.7); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+  border-left: 4px solid rgba(229, 186, 211, 0.8); 
+}
+
+.project-card h1 {
+  font-size: 1.5rem;
+   color: #9885c4;
+  text-shadow: 0 0 10px rgba(161,140,209,0.7);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  color: #ccc6d8; 
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.project-card span {
+  color: #bfb8c5; 
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.project-card .tools h2,
+.project-card .func h2{
+    color: #9885c4;
+  text-shadow: 0 0 10px rgba(161,140,209,0.7);
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.project-card .func li,
+.project-card .tools p{
+ color: #d0cfe2;
+  margin-bottom: 6px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+
+.project-card .func ul{
+  list-style-type: disc;
+  padding-left: 22px;
+}
+
+.project-card .func a{
+  color: #bfb8c5; 
+  font-size: 2rem;
+}
+
+
+@media (max-width: 768px) {
+  .project-content {
+    padding: 1rem;
+    gap: 25px;
+  }
+  .project-card {
+    padding: 20px 15px;
+  }
+  .project-card h1 {
+    font-size: 1.2rem;
+  }
+  .project-card h3 {
+    font-size: 1rem;
+  }
+  .project-card .tools h2,
+  .project-card .func h2 {
+    font-size: 1rem;
+  }
+}
+

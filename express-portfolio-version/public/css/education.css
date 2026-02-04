@@ -1,0 +1,119 @@
+.educ {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.educ .text, .educ .text2 {
+  background: linear-gradient(135deg, rgba(36,42,61,0.85), rgba(46, 20, 25, 0.614));
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+  color: #f0f0f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  overflow: hidden;
+}
+
+
+.educ .text:hover, .educ .text2:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 45px rgba(0,0,0,0.5);
+}
+
+
+.educ h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #20d2d8;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.educ h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #cd921e;
+  margin: 1rem 0 0.5rem;
+  position: relative;
+  text-align: left;
+}
+
+.educ h2::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 60px;
+  background: #20d2d8;
+  border-radius: 2px;
+  margin-top: 0.3rem;
+}
+
+
+.educ p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.educ p span {
+  color: #cd921e;
+  font-weight: 600;
+}
+
+
+.educ p::before {
+  content: "•";
+  color: #20d2d8;
+  display: inline-block;
+  width: 1.2em;
+  margin-left: -1.2em;
+  font-weight: bold;
+}
+
+.educ .image img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.educ .image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.5);
+}
+
+@media (min-width: 1024px) {
+  .educ {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .educ .text, .educ .text2 {
+    margin: 0;
+  }
+
+  .educ .image img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .educ {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .educ .image img {
+    max-width: 180px;
+    margin: 0 auto 1rem auto;
+    display: block;
+  }
+}
