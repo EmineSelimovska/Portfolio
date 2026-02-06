@@ -1,10 +1,10 @@
 .educ {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2.5rem;
+  gap: 20px;
   max-width: 1200px;
   margin: 2rem auto;
-  padding: 2rem;
+  padding: 1rem;
   font-family: 'Inter', sans-serif;
 }
 
@@ -12,32 +12,31 @@
   background: linear-gradient(135deg, rgba(36,42,61,0.85), rgba(46, 20, 25, 0.614));
   border-radius: 14px;
   padding: 2rem;
-  box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
   color: #f0f0f0;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   overflow: hidden;
+  gap: 1rem;
 }
-
 
 .educ .text:hover, .educ .text2:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 15px 45px rgba(0,0,0,0.5);
+  transform: translateY(-2px) scale(1.1);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.45);
 }
 
-
 .educ h1 {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #20d2d8;
-  margin-bottom: 1rem;
-  text-align: center;
+  margin-bottom: 0.8rem;
+  text-align: left;
 }
 
 .educ h2 {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #cd921e;
-  margin: 1rem 0 0.5rem;
+  margin: 0.8rem 0 0.4rem;
   position: relative;
   text-align: left;
 }
@@ -46,24 +45,22 @@
   content: "";
   display: block;
   height: 3px;
-  width: 60px;
+  width: 50px;
   background: #20d2d8;
   border-radius: 2px;
   margin-top: 0.3rem;
 }
 
-
 .educ p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 0.2rem;
 }
 
 .educ p span {
   color: #cd921e;
   font-weight: 600;
 }
-
 
 .educ p::before {
   content: "•";
@@ -76,17 +73,18 @@
 
 .educ .image img {
   width: 100%;
-  max-width: 180px;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-  margin-bottom: 1rem;
+  max-width: 80px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  margin: 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .educ .image img:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 28px rgba(0,0,0,0.5);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.4);
 }
+
 
 @media (min-width: 1024px) {
   .educ {
