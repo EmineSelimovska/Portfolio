@@ -1,12 +1,18 @@
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  margin: 0;
+}
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background: rgb(63, 94, 251);
   background: radial-gradient(
     circle,
@@ -27,16 +33,6 @@ body {
   z-index: -1;
   overflow: hidden;
 }
-
-
-.container {
-  max-width: 100%;
-  padding: 0;
-  margin: 0 auto;
-  min-height: 100vh;
-}
-
-.back a ion-icon { font-size: 40px; color: black; }
 
 
 nav {
@@ -84,6 +80,18 @@ nav {
 }
 
 
+.container {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back a ion-icon {
+  font-size: 40px;
+  color: black;
+}
+
 .me {
   display: flex;
   flex-direction: column;
@@ -104,7 +112,6 @@ nav {
   border: 3px solid rgb(83, 5, 70);
   border-radius: 10px 100px/120px;
 }
-
 
 .animation {
   overflow: hidden;
@@ -146,12 +153,19 @@ nav {
 }
 
 @keyframes text-animation {
-  0% { transform: translateY(0); }
-  33.33% { transform: translateY(-1.4em); }
-  66.66% { transform: translateY(-2.8em); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  33.33% {
+    transform: translateY(-1.4em);
+  }
+  66.66% {
+    transform: translateY(-2.8em);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-
 
 .particle {
   position: absolute;
@@ -163,21 +177,59 @@ nav {
   animation: fall linear infinite;
 }
 
-.particle:nth-child(1) { left: 5%; animation-duration: 8s; }
-.particle:nth-child(2) { left: 15%; animation-duration: 12s; }
-.particle:nth-child(3) { left: 25%; animation-duration: 10s; }
-.particle:nth-child(4) { left: 35%; animation-duration: 14s; }
-.particle:nth-child(5) { left: 45%; animation-duration: 9s; }
-.particle:nth-child(6) { left: 55%; animation-duration: 11s; }
-.particle:nth-child(7) { left: 65%; animation-duration: 13s; }
-.particle:nth-child(8) { left: 75%; animation-duration: 15s; }
-.particle:nth-child(9) { left: 85%; animation-duration: 10s; }
-.particle:nth-child(10){ left: 95%; animation-duration: 12s; }
+.particle:nth-child(1) {
+  left: 5%;
+  animation-duration: 8s;
+}
+.particle:nth-child(2) {
+  left: 15%;
+  animation-duration: 12s;
+}
+.particle:nth-child(3) {
+  left: 25%;
+  animation-duration: 10s;
+}
+.particle:nth-child(4) {
+  left: 35%;
+  animation-duration: 14s;
+}
+.particle:nth-child(5) {
+  left: 45%;
+  animation-duration: 9s;
+}
+.particle:nth-child(6) {
+  left: 55%;
+  animation-duration: 11s;
+}
+.particle:nth-child(7) {
+  left: 65%;
+  animation-duration: 13s;
+}
+.particle:nth-child(8) {
+  left: 75%;
+  animation-duration: 15s;
+}
+.particle:nth-child(9) {
+  left: 85%;
+  animation-duration: 10s;
+}
+.particle:nth-child(10) {
+  left: 95%;
+  animation-duration: 12s;
+}
 
 @keyframes fall {
-  0% { transform: translateY(0) scale(0.5); opacity: 0; }
-  10% { opacity: 1; }
-  100% { transform: translateY(110vh) scale(1); opacity: 0; }
+  0% {
+    transform: translateY(0) scale(0.5);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) scale(1);
+    opacity: 0;
+  }
 }
 
 .footer {
@@ -197,36 +249,83 @@ nav {
   text-decoration: underline;
 }
 
-
-
 @media (max-width: 600px) {
-  nav { gap: 6px; justify-content: center; }
-  .nav-item ion-icon { font-size: 20px; }
-  .userPic { width: 110px; }
-  .animation { font-size: 16px; height: 1.4em; }
-  .animation-inner > div { max-width: 90%; }
+  nav {
+    gap: 6px;
+    justify-content: center;
+  }
+  .nav-item ion-icon {
+    font-size: 20px;
+  }
+  .userPic {
+    width: 110px;
+  }
+  .animation {
+    font-size: 16px;
+    height: 1.4em;
+  }
+  .animation-inner > div {
+    max-width: 90%;
+  }
 
-  .particle:nth-child(1) { left: 10%; }
-  .particle:nth-child(2) { left: 30%; }
-  .particle:nth-child(3) { left: 50%; }
-  .particle:nth-child(4) { left: 70%; }
-  .particle:nth-child(5) { left: 90%; }
+  .particle:nth-child(1) {
+    left: 10%;
+  }
+  .particle:nth-child(2) {
+    left: 30%;
+  }
+  .particle:nth-child(3) {
+    left: 50%;
+  }
+  .particle:nth-child(4) {
+    left: 70%;
+  }
+  .particle:nth-child(5) {
+    left: 90%;
+  }
 }
-
 
 @media (min-width: 768px) {
-  nav { gap: 12px; justify-content: space-around; }
-  .nav-item ion-icon { font-size: 22px; }
-  .me { font-size: 26px; justify-content: center; }
-  .userPic { width: 130px; }
+  nav {
+    gap: 12px;
+    justify-content: space-around;
+  }
+  .nav-item ion-icon {
+    font-size: 22px;
+  }
+  .me {
+    font-size: 26px;
+    justify-content: center;
+  }
+  .userPic {
+    width: 130px;
+  }
 }
 
-
 @media (min-width: 1024px) {
-  .me { flex-direction: row; align-items: center; justify-content: center; gap: 1rem; text-align: left; }
-  nav { justify-content: space-around; gap: 24px; }
-  .nav-item ion-icon { font-size: 40px; }
-  .animation { width: auto; margin: 0; }
-  .animation-inner > div { margin: 0; }
-  .userPic { width: 180px; margin: 0; }
+  .me {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: left;
+  }
+  nav {
+    justify-content: space-around;
+    gap: 24px;
+  }
+  .nav-item ion-icon {
+    font-size: 40px;
+  }
+  .animation {
+    width: auto;
+    margin: 0;
+  }
+  .animation-inner > div {
+    margin: 0;
+  }
+  .userPic {
+    width: 180px;
+    margin: 0;
+  }
 }
