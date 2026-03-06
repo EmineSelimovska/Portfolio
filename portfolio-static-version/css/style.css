@@ -34,7 +34,6 @@ body {
   overflow: hidden;
 }
 
-
 nav {
   display: flex;
   justify-content: center;
@@ -79,12 +78,22 @@ nav {
   }
 }
 
-
 .container {
   flex: 1;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.back {
+  align-self: flex-start;
+  margin-bottom: 4rem;
 }
 
 .back a ion-icon {

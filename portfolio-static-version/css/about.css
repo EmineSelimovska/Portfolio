@@ -1,10 +1,9 @@
 .content {
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 3rem;
-  margin: 3rem auto;
-  max-width: 1200px;
+  gap: 40px;
+  width: 100%;
 
   background: rgba(20, 20, 30, 0.55);
   backdrop-filter: blur(14px);
@@ -13,7 +12,7 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
 
-  box-shadow: 
+  box-shadow:
     0 20px 40px rgba(0, 0, 0, 0.6),
     inset 0 0 20px rgba(255, 255, 255, 0.02);
 
@@ -88,7 +87,8 @@
 @media (max-width: 768px) {
   .content {
     padding: 2rem 1.2rem;
-    margin: 2rem 1rem;
+    margin: 2rem 0;
+    gap: 30px;
   }
 
   .about-container h2 {
@@ -110,13 +110,12 @@
   }
 }
 
-
 /* ===== Tablet & Small Laptop ===== */
 @media (max-width: 1024px) {
-
   .content {
     padding: 2.5rem 2rem;
-    margin: 2rem;
+    margin: 2rem 0;
+    gap: 30px;
   }
 
   .about-container {
@@ -130,25 +129,17 @@
   .about-container p {
     font-size: 1rem;
   }
-
 }
-
 
 /* ===== Tablet Portrait ===== */
 @media (max-width: 900px) {
-
   .content {
     padding: 2rem 1.5rem;
+    margin: 2rem 0;
+    gap: 30px;
   }
 
   .about-container {
     max-width: 600px;
   }
-
 }
-
-
-
-
-
-
