@@ -33,6 +33,12 @@
 
     <header>
       <nav>
+         <div class="home nav-item">
+          <a href="index.html">
+            <ion-icon name="home"></ion-icon>
+            <span>Home</span>
+          </a>
+        </div>
         <div class="education nav-item">
           <a href="education.html">
             <ion-icon name="school"></ion-icon>
@@ -66,7 +72,7 @@
         </div>
         <div class="contact nav-item">
           <a href="contact.html"
-            ><ion-icon name="mail">Contact</ion-icon>
+          ><ion-icon name="mail"></ion-icon>
             <span>Contact</span>
           </a>
         </div>
@@ -78,19 +84,37 @@
         </div>
       </nav>
     </header>
-    
+
     <main class="container">
       <div class="me">
-        <p>Hello 👋 I'm</p>
-        <section class="animation">
-          <div class="animation-inner">
-            <div>Emine Selimovska.</div>
-            <div>JavaScript Developer.</div>
-            <div>Software Engineer.</div>
-          </div>
-        </section>
+        <div class="hero-text">
+          <p class="hello">Hello 👋 I'm</p>
 
-        <img class="userPic" src="./images/emine-pic.jpg" alt="emine-pic" />
+          <h1>Emine Selimovska</h1>
+
+          <section class="animation">
+            <div class="animation-inner">
+              <div>Frontend Developer</div>
+              <div>JavaScript Developer</div>
+              <div>Software Engineer</div>
+            </div>
+          </section>
+
+          <p class="description">
+            I build modern, responsive web applications with clean code and
+            great user experience.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="projects.html"> View Projects </a>
+
+            <a href="contact.html"> Contact Me </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img class="userPic" src="./images/emine-pic.jpg" alt="emine-pic" />
+        </div>
       </div>
     </main>
 

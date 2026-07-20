@@ -8,119 +8,190 @@
     />
     <link
       rel="stylesheet"
-      href="https://https://unpkg.com/ionicons@7.1.0/dist/css/ionicons.min.css"
+      href="https://unpkg.com/ionicons@7.1.0/dist/css/ionicons.min.css"
     />
     <link
       href="https://fonts.googleapis.com/css?family=Josefin+Sans"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/projects.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cards.css" />
     <title>Portfolio</title>
   </head>
   <body>
-     <div class="back">
-        <a href="index.html"
-          ><ion-icon name="return-down-back-outline"></ion-icon
-        ></a>
-      </div>
+    <div class="background">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+
+    <header>
+      <nav>
+        <div class="home nav-item">
+          <a href="index.html">
+            <ion-icon name="home"></ion-icon>
+            <span>Home</span>
+          </a>
+        </div>
+        <div class="education nav-item">
+          <a href="education.html">
+            <ion-icon name="school"></ion-icon>
+            <span>Education</span>
+          </a>
+        </div>
+        <div class="experience nav-item">
+          <a href="experience.html">
+            <ion-icon name="briefcase"></ion-icon>
+            <span>Experience</span>
+          </a>
+        </div>
+        <div class="projects nav-item">
+          <a href="projects.html">
+            <ion-icon name="folder-open"></ion-icon>
+            <span>Projects</span>
+          </a>
+        </div>
+
+        <div class="certification nav-item">
+          <a href="certification.html">
+            <ion-icon name="document"></ion-icon>
+            <span>Certification</span>
+          </a>
+        </div>
+        <div class="skills nav-item">
+          <a href="skills.html">
+            <ion-icon name="flower"></ion-icon>
+            <span>Skills</span>
+          </a>
+        </div>
+        <div class="contact nav-item">
+          <a href="contact.html"
+            ><ion-icon name="mail"></ion-icon>
+            <span>Contact</span>
+          </a>
+        </div>
+        <div class="about nav-item">
+          <a href="about.html"
+            ><ion-icon name="woman"></ion-icon>
+            <span>About me</span>
+          </a>
+        </div>
+      </nav>
+    </header>
 
     <main class="container">
       <div class="project-content">
         <div class="project-card">
-          <h1>E-commerce pizza ordering site (study case)</h1>
-          <h3>Software university (SoftUni)</h3>
-          <span>February - April 2024</span>
-          <div class="tools">
-            <h2>Tech Stack:</h2>
-            <p>Back-End: NodeJS, Express</p>
-            <p>Front-End: Angular</p>
-            <p>Database: MongoDB</p>
+          <div class="project-header">
+            <h1>E-commerce Pizza Ordering App</h1>
+
+            <p class="subtitle">Software University (SoftUni)</p>
+
+            <span class="date"> February - April 2024 </span>
           </div>
-          <div class="func">
-            <h2>Key Contributions:</h2>
+
+          <p class="project-description">
+            Full-stack e-commerce application for ordering pizzas. Includes
+            authentication, product management, shopping cart, online payment
+            and order processing.
+          </p>
+
+          <div class="tech-stack">
+            <span>Angular</span>
+            <span>NodeJS</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+            <span>PayPal API</span>
+          </div>
+
+          <div class="features">
+            <h2>Key Features</h2>
+
             <ul>
-              <li>Choose to add a product to your cart</li>
-              <li>
-                Select a quantity and proceed to checkout by entering a location
-                with Google Maps and then using PayPal for payment. When payment
-                is complete, an order details page will appear;
-              </li>
-              <li>
-                For login and registration, there is a validation of the fields
-                and for an invalid page it redirects to the"Not Found" page;
-              </li>
-              <li>
-                Evaluation is done with ngBootstrap and popups with Toastr.
-                Search for a product by name and there are tags by which it is
-                possible to sort the products.
-              </li>
-              <li>
-                For more information:
-                <a
-                  href="https://github.com/EmineSelimovska/angular-project-express-pizza"
-                  ><ion-icon name="logo-github"></ion-icon
-                ></a>
-              </li>
+              <li>User authentication and validation</li>
+
+              <li>Shopping cart with quantity management</li>
+
+              <li>Google Maps integration and PayPal checkout</li>
+
+              <li>Product search and filtering</li>
             </ul>
           </div>
+
+          <a
+            class="github-btn"
+            href="https://github.com/EmineSelimovska/angular-project-express-pizza"
+          >
+            <ion-icon name="logo-github"></ion-icon>
+
+            View Code
+          </a>
         </div>
 
         <div class="project-card">
-          <h1>Real estate site (study case)</h1>
-          <h3>Software university (SoftUni)</h3>
-          <span>October - December 2023</span>
-          <div class="tools">
-            <h2>Tech Stack:</h2>
-            <p>Back-End: interfacing with the SoftUni Practice Server</p>
-            <p>Front-End: ReactJS</p>
+          <div class="project-header">
+            <h1>Real Estate Platform</h1>
+
+            <p class="subtitle">Software University (SoftUni)</p>
+
+            <span class="date"> October - December 2023 </span>
           </div>
-          <div class="func">
-            <h2>Key Contributions:</h2>
+
+          <p class="project-description">
+            React-based real estate application with user authentication,
+            property management and comments system.
+          </p>
+
+          <div class="tech-stack">
+            <span>ReactJS</span>
+            <span>React Router</span>
+            <span>CSS</span>
+            <span>Leaflet</span>
+            <span>SoftUni Server</span>
+          </div>
+
+          <div class="features">
+            <h2>Key Features</h2>
+
             <ul>
-              <li>
-                The project boasts a structured component architecture,
-                utilizing React Router for seamless navigation and CSS for
-                styling.
-              </li>
-              <li>
-                Key features include user authentication with secure
-                registration/login/logout, property management (create, edit,
-                delete), and a comments system.
-              </li>
-              <li>
-                The contact page integrates Google Maps for location
-                visualization and a form to submit questions.
-              </li>
-              <li>
-                Technologies used include ReactJS, SoftUni Practice Server, CSS,
-                React Router, react-toastify for notifications, Leaflet for map
-                integration and form validation.
-              </li>
-              <li>
-                For more information:<a
-                  href="https://github.com/EmineSelimovska/ReactJS-Project"
-                >
-                  <ion-icon name="logo-github"></ion-icon
-                ></a>
-              </li>
+              <li>User registration, login and logout</li>
+
+              <li>Create, edit and delete properties</li>
+
+              <li>Comments system</li>
+
+              <li>Interactive maps integration</li>
             </ul>
           </div>
+
+          <a
+            class="github-btn"
+            href="https://github.com/EmineSelimovska/ReactJS-Project"
+          >
+            <ion-icon name="logo-github"></ion-icon>
+
+            View Code
+          </a>
         </div>
       </div>
     </main>
 
-     <footer class="footer">
-        <a href="mailto:emine.selimovska@outlook.com">Email</a>
-        <span>·</span>
-        <a
-          href="https://www.linkedin.com/in/emine-selimovska"
-          target="_blank"
-          >LinkedIn</a
-        >
-        <span>·</span>
-        <a href="https://github.com/EmineSelimovska" target="_blank">GitHub</a>
-     </footer>
+    <footer class="footer">
+      <a href="mailto:emine.selimovska@outlook.com">Email</a>
+      <span>·</span>
+      <a href="https://www.linkedin.com/in/emine-selimovska" target="_blank"
+        >LinkedIn</a
+      >
+      <span>·</span>
+      <a href="https://github.com/EmineSelimovska" target="_blank">GitHub</a>
+    </footer>
   </body>
   <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons.js"></script>
 </html>
