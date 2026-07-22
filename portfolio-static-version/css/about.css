@@ -302,4 +302,44 @@
 
 }
 
+.about-action {
+  margin-top:30px;
+  text-align:center;
+}
+
+
+.about-action a {
+
+  display:inline-block;
+
+  padding:12px 30px;
+
+  border-radius:50px;
+
+  text-decoration:none;
+
+  color:white;
+
+  font-weight:600;
+
+  background:
+  linear-gradient(
+    90deg,
+    #a78bfa,
+    #7c3aed
+  );
+
+  transition:.3s ease;
+
+}
+
+
+.about-action a:hover {
+
+  transform:translateY(-4px);
+
+  box-shadow:
+  0 15px 35px rgba(139,92,246,.35);
+
+}
 
