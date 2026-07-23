@@ -2,15 +2,33 @@
       CERTIFICATES
 ===================== */
 
+
+/* =====================
+      CERTIFICATES
+===================== */
+
+
+.container:has(.cerf) {
+
+  flex:1;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  padding:150px 20px 50px;
+
+}
+
+
+
 .cerf {
 
   width:100%;
 
-  max-width:1100px;
-
-  margin:220px auto 60px;
-
-  padding:20px;
+  max-width:780px;
 
 }
 
@@ -27,16 +45,14 @@
   display:grid;
 
 
-  grid-template-columns:repeat(4,1fr);
+   grid-template-columns:repeat(5,1fr);
+
+  gap:12px;
+
+  padding:20px;
 
 
-  gap:25px;
-
-
-  padding:35px;
-
-
-  background:rgba(255,255,255,.06);
+  background:rgba(255,255,255,.05);
 
 
   backdrop-filter:blur(18px);
@@ -57,8 +73,9 @@
 
 
 
+
 /* =====================
-      CERTIFICATE CARD
+      CARD
 ===================== */
 
 
@@ -71,10 +88,10 @@
   border:1px solid rgba(255,255,255,.12);
 
 
-  border-radius:18px;
+  padding:6px;
 
+  border-radius:14px;
 
-  padding:12px;
 
 
   transition:.35s ease;
@@ -87,7 +104,7 @@
 .col:hover {
 
 
-  transform:translateY(-8px);
+  transform:translateY(-6px);
 
 
   border-color:#a78bfa;
@@ -96,7 +113,7 @@
   box-shadow:
 
 
-  0 20px 45px rgba(139,92,246,.3);
+  0 15px 35px rgba(139,92,246,.3);
 
 
 }
@@ -114,7 +131,7 @@
   width:100%;
 
 
-  height:260px;
+  height:150px;
 
 
   object-fit:contain;
@@ -123,7 +140,7 @@
   display:block;
 
 
-  border-radius:12px;
+  border-radius:10px;
 
 
   cursor:pointer;
@@ -139,7 +156,7 @@
 .col img:hover {
 
 
-  transform:scale(1.03);
+  transform:scale(1.04);
 
 
 }
@@ -149,6 +166,7 @@
 /* =====================
       POPUP
 ===================== */
+
 
 .click {
 
@@ -170,6 +188,8 @@
 
 }
 
+
+
 #lastImg {
 
   max-width:80%;
@@ -182,8 +202,6 @@
 
 }
 
-
-/* CLOSE */
 
 
 .closebtn {
@@ -213,9 +231,7 @@
 
 .closebtn:hover {
 
-
   color:#a78bfa;
-
 
 }
 
@@ -247,9 +263,6 @@
   cursor:pointer;
 
 
-  user-select:none;
-
-
 }
 
 
@@ -272,17 +285,23 @@
 
 .nav:hover {
 
-
   color:#a78bfa;
-
 
 }
 
 
 
 /* =====================
-      RESPONSIVE
+      TABLET
 ===================== */
+
+@media(max-width:1200px){
+
+  .cerf .certificate-gallery {
+    grid-template-columns:repeat(4,1fr);
+  }
+
+}
 
 
 @media(max-width:1000px){
@@ -291,7 +310,7 @@
 .cerf .certificate-gallery {
 
 
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(4,1fr);
 
 
 }
@@ -299,70 +318,47 @@
 
 }
 
+@media(max-width:900px){
+
+  .cerf .certificate-gallery {
+    grid-template-columns:repeat(3,1fr);
+  }
+
+}
+
+
+/* =====================
+      MOBILE
+===================== */
 
 
 @media(max-width:768px){
 
 
+.container:has(.cerf){
+
+  align-items:flex-start;
+
+  padding:120px 15px 40px;
+
+}
+
+
 .cerf {
 
-  margin-top:170px;
-
-  padding:15px;
+  max-width:100%;
 
 }
 
 
 .cerf .certificate-gallery {
 
-
   grid-template-columns:repeat(2,1fr);
 
-  padding:20px;
-
-
 }
 
 
-
-.col img {
-
-
-  height:220px;
-
-
 }
-
-
-
-.nav {
-
-
-  font-size:30px;
-
-
-}
-
-
-
-.prev {
-
-  left:10px;
-
-}
-
-
-
-.next {
-
-  right:10px;
-
-}
-
-
-
-}
-
 
 
 @media(max-width:450px){
@@ -381,7 +377,7 @@
 .col img {
 
 
-  height:260px;
+  height:240px;
 
 
 }
