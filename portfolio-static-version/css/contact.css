@@ -1,9 +1,5 @@
 /* =====================
-      CONTACT PAGE FIX
-===================== */
-
-/* =====================
-      CONTACT PAGE FIX
+      CONTACT PAGE
 ===================== */
 
 
@@ -17,7 +13,10 @@
 
   align-items:center;
 
+  padding:160px 20px 60px;
+
 }
+
 
 
 .contact-section {
@@ -26,9 +25,8 @@
 
   max-width:600px;
 
-  margin:100px auto 60px;
-
   padding:30px;
+
 
   background:rgba(255,255,255,.04);
 
@@ -38,12 +36,16 @@
 
   border-radius:25px;
 
+
   box-shadow:
   0 20px 50px rgba(0,0,0,.30);
+
 
   text-align:center;
 
 }
+
+
 .contact-section h1 {
 
   font-size:2.2rem;
@@ -174,13 +176,41 @@
 
 /* RESPONSIVE */
 
-
 @media(max-width:900px){
+
+.container:has(.contact-section){
+
+  padding:130px 20px 40px;
+
+}
+
+
+}
+
+@media(max-width:768px){
+
+
+.container:has(.contact-section){
+
+  align-items:flex-start;
+
+  padding:120px 15px 40px;
+
+}
+
+
+
+.contact-section {
+
+  padding:25px 20px;
+
+}
+
 
 
 .contact-grid {
 
-grid-template-columns:repeat(2,1fr);
+  grid-template-columns:1fr;
 
 }
 
@@ -213,7 +243,7 @@ grid-template-columns:1fr;
 }
 
 .contact-card span{
-  font-size: 0.5rem;
+  font-size: .85rem;
 }
 
 .contact-card ion-icon{
@@ -223,7 +253,7 @@ grid-template-columns:1fr;
 
 .contact-section h1 {
 
-font-size:1.8rem;
+font-size:2rem;
 
 }
 
