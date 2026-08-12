@@ -13,23 +13,36 @@
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>About | Emine Selimovska</title>
-    <link rel="icon" type="image/png" href="./images/my-logo.png"/>
+    <link rel="icon" type="image/png" href="./images/my-logo.png" />
 
+    <meta property="og:title" content="Emine Selimovska | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Portfolio showcasing my projects, skills and experience."
+    />
+    <meta
+      property="og:image"
+      content="https://emineselimovska-myportfolio.onrender.com/images/ES.jpg"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://emineselimovska-myportfolio.onrender.com/about.html"
+    />
 
-<meta property="og:title" content="Emine Selimovska | Software Engineer" />
-<meta property="og:description" content="Portfolio showcasing my projects, skills and experience." />
-<meta property="og:image" content="https://emineselimovska-myportfolio.onrender.com/images/ES.jpg" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://emineselimovska-myportfolio.onrender.com/about.html" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Emine Selimovska | Software Engineer" />
-<meta name="twitter:description" content="Portfolio showcasing my projects, skills and experience." />
-<meta name="twitter:image" content="https://emineselimovska-myportfolio.onrender.com/images/ES.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Emine Selimovska | Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Portfolio showcasing my projects, skills and experience."
+    />
+    <meta
+      name="twitter:image"
+      content="https://emineselimovska-myportfolio.onrender.com/images/ES.jpg"
+    />
   </head>
   <body>
-
-     <div class="background">
+    <div class="background">
       <div class="particle"></div>
       <div class="particle"></div>
       <div class="particle"></div>
@@ -42,7 +55,11 @@
       <div class="particle"></div>
     </div>
 
-      <header>
+    <header>
+      <button class="menu-toggle">
+        <ion-icon name="layers"></ion-icon>
+      </button>
+
       <nav>
         <div class="home nav-item">
           <a href="index.html">
@@ -96,61 +113,77 @@
       </nav>
     </header>
 
-      
-    <main class="container">
-      <div class="content">
-        <div class="about-container">
-          <h1>About Me</h1>
+   <main class="container">
+  <div class="content">
 
-          <p>
-            I am a Software Developer with hands-on experience in building
-            modern full-stack web applications that solve real-world problems.
-          </p>
+    <div class="about-container">
 
-          <p>
-            I specialize in developing scalable, responsive, and user-focused
-            solutions using clean architecture and modern development practices.
-          </p>
+      <h1>About Me</h1>
 
-          <p>
-            My experience includes building and improving real-world web
-            applications, integrating REST APIs, and collaborating in structured
-            development workflows.
-          </p>
+      <div class="about-text">
 
-          <p>
-            My goal is to continuously improve my skills while building
-            high-quality, efficient, and performance-focused software solutions.
-          </p>
+        <p>
+          I am a Software Developer with hands-on experience in building
+          modern full-stack web applications that solve real-world problems.
+        </p>
 
-          <div class="about-skills">
-            <span>
-               <ion-icon name="logo-javascript"></ion-icon>
-              JavaScript</span>
-            <span>
-              <ion-icon name="rocket-outline"></ion-icon>
-               Full-Stack Web Development</span>
-            <span>
-              <ion-icon name="trophy-outline"></ion-icon>
-              Real-world Application Experience</span>
-            <span>
-              <ion-icon name="color-wand-outline"></ion-icon>
-              Clean UI & Performance-focused</span>
-          </div>
+        <p>
+          I specialize in developing scalable, responsive, and user-focused
+          solutions using clean architecture and modern development practices.
+        </p>
 
-        </div>
+        <p>
+          My experience includes building and improving real-world web
+          applications, integrating REST APIs, and collaborating in structured
+          development workflows.
+        </p>
+
+        <p>
+          My goal is to continuously improve my skills while building
+          high-quality, efficient, and performance-focused software solutions.
+        </p>
+
       </div>
-    </main>
 
-      <footer class="footer">
-        <a href="mailto:emine.selimovska@outlook.com">Email</a>
-        <span>·</span>
-        <a href="https://www.linkedin.com/in/emine-selimovska" target="_blank"
-          >LinkedIn</a
-        >
-        <span>·</span>
-        <a href="https://github.com/EmineSelimovska" target="_blank">GitHub</a>
-      </footer>
+
+      <div class="about-skills">
+
+        <span>
+          <ion-icon name="logo-javascript"></ion-icon>
+          JavaScript
+        </span>
+
+        <span>
+          <ion-icon name="rocket-outline"></ion-icon>
+          Full-Stack Web Development
+        </span>
+
+        <span>
+          <ion-icon name="trophy-outline"></ion-icon>
+          Real-world Application Experience
+        </span>
+
+        <span>
+          <ion-icon name="color-wand-outline"></ion-icon>
+          Clean UI & Performance-focused
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+      
+    <footer class="footer">
+      <div class="footer-line"></div>
+      <a href="contact.html" class="footer-connect">
+        <span>·</span> Say hello <span>·</span>
+      </a>
+    </footer>
+    
   </body>
   <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons.js"></script>
+  <script src="./js/script.js"></script>
 </html>

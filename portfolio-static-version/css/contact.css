@@ -2,262 +2,669 @@
       CONTACT PAGE
 ===================== */
 
-
 .container:has(.contact-section) {
+    flex: 1;
 
-  flex:1;
+    width: 100%;
 
-  display:flex;
+    display: flex;
 
-  justify-content:center;
+    align-items: center;
+    justify-content: center;
 
-  align-items:center;
+    padding: 45px 20px 35px;
 
-  padding:160px 20px 60px;
-
+    position: relative;
+    z-index: 1;
 }
 
 
+/* =====================
+      MAIN CONTACT BOX
+===================== */
 
 .contact-section {
+    position: relative;
 
-  width:100%;
+    width: 100%;
+    max-width: 780px;
 
-  max-width:600px;
+    padding: 52px 55px;
 
-  padding:30px;
+    text-align: center;
 
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, .045),
+            rgba(167, 139, 250, .018)
+        );
 
-  background:rgba(255,255,255,.04);
+    backdrop-filter: blur(24px);
 
-  backdrop-filter:blur(18px);
+    -webkit-backdrop-filter: blur(24px);
 
-  border:1px solid rgba(255,255,255,.10);
+    border: 1px solid rgba(255, 255, 255, .085);
 
-  border-radius:25px;
+    border-radius: 32px;
 
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, .38);
 
-  box-shadow:
-  0 20px 50px rgba(0,0,0,.30);
-
-
-  text-align:center;
-
+    overflow: hidden;
 }
 
+
+/* =====================
+      TOP LIGHT
+===================== */
+
+.contact-section::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    left: -210px;
+    top: -210px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(167, 139, 250, .13),
+            transparent 68%
+        );
+
+    filter: blur(45px);
+
+    pointer-events: none;
+}
+
+
+/* =====================
+      SUBTLE BORDER LIGHT
+===================== */
+
+.contact-section::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: inherit;
+
+    border: 1px solid rgba(255, 255, 255, .025);
+
+    pointer-events: none;
+}
+
+
+/* =====================
+      TITLE
+===================== */
 
 .contact-section h1 {
+    position: relative;
+    z-index: 2;
 
-  font-size:2.2rem;
+    margin: 0 0 11px;
 
-  margin-bottom:15px;
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
 
-  background:linear-gradient(
-    90deg,
-    white,
-    #a78bfa
-  );
+    font-weight: 700;
 
-  -webkit-background-clip:text;
+    letter-spacing: -1.5px;
 
-  color:transparent;
+    line-height: 1.05;
 
+    background:
+        linear-gradient(
+            100deg,
+            #ffffff 15%,
+            #ddd6fe 55%,
+            #a78bfa 100%
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
 }
 
+
+/* =====================
+      DESCRIPTION
+===================== */
 
 .contact-section p {
+    position: relative;
+    z-index: 2;
 
-  color:#d4d4d8;
+    max-width: 500px;
 
-  margin-bottom:40px;
+    margin: 0 auto;
 
+    color: #a1a1aa;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    letter-spacing: .1px;
 }
 
-/* GRID */
 
+/* =====================
+      CONTACT CONTENT
+===================== */
+
+.contact-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    align-items: center;
+
+    margin-top: 52px;
+}
+
+
+/* =====================
+      BRAND
+===================== */
+
+.contact-brand {
+    position: relative;
+
+    min-height: 220px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =====================
+      BRAND GLOW
+===================== */
+
+.contact-brand::before {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(167, 139, 250, .15),
+            transparent 67%
+        );
+
+    filter: blur(32px);
+
+    pointer-events: none;
+
+    transition:
+        transform .5s ease,
+        opacity .5s ease;
+}
+
+
+/* =====================
+      E ✓ S LOGO
+===================== */
+
+.brand-logo {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    font-size: clamp(4.2rem, 7vw, 5.5rem);
+
+    font-weight: 700;
+
+    letter-spacing: -6px;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    user-select: none;
+
+    transition:
+        transform .45s cubic-bezier(.2,.8,.2,1),
+        filter .45s ease;
+}
+
+
+/* =====================
+      E + S
+===================== */
+
+.brand-letter {
+    display: inline-block;
+
+    color: #a78bfa;
+
+    text-shadow:
+        0 0 18px rgba(167, 139, 250, .18),
+        0 0 45px rgba(139, 92, 246, .10);
+
+    transition:
+        color .35s ease,
+        text-shadow .35s ease;
+}
+
+
+/* =====================
+      CHECK
+===================== */
+
+.brand-check {
+    display: inline-block;
+
+    color: #ddd6fe;
+
+    font-size: .78em;
+
+    margin: 0 2px;
+
+    transform: translateY(-3px);
+
+    text-shadow:
+        0 0 8px rgba(221, 214, 254, .75),
+        0 0 22px rgba(167, 139, 250, .55),
+        0 0 40px rgba(139, 92, 246, .25);
+
+    transition:
+        transform .35s ease,
+        text-shadow .35s ease;
+}
+
+
+/* =====================
+      BRAND HOVER
+===================== */
+
+.contact-brand:hover .brand-logo {
+    transform: translateY(-3px) scale(1.035);
+
+    filter:
+        drop-shadow(
+            0 12px 28px rgba(139, 92, 246, .14)
+        );
+}
+
+
+.contact-brand:hover::before {
+    transform: scale(1.08);
+
+    opacity: .85;
+}
+
+
+.contact-brand:hover .brand-check {
+    transform:
+        translateY(-4px)
+        scale(1.05);
+
+    text-shadow:
+        0 0 10px rgba(221, 214, 254, .9),
+        0 0 28px rgba(167, 139, 250, .7),
+        0 0 50px rgba(139, 92, 246, .35);
+}
+
+
+/* =====================
+      CONTACT GRID
+===================== */
 
 .contact-grid {
+    display: flex;
 
-  display:grid;
+    flex-direction: column;
 
-  grid-template-columns:repeat(2, 200px);
+    align-items: flex-start;
 
-  justify-content:center;
+    justify-content: center;
 
-  gap:25px;
-
+    gap: 13px;
 }
 
+
+/* =====================
+      CONTACT CARD
+===================== */
 
 .contact-card {
-
-  padding:30px;
-
-  background:rgba(255,255,255,.06);
-
-  backdrop-filter:blur(18px);
-
-  border:1px solid rgba(255,255,255,.12);
-
-  border-radius:20px;
-
-  transition:.3s ease;
-
+    width: 100%;
 }
 
 
-
-.contact-card:hover {
-
-  transform:translateY(-8px);
-
-
-  background:
-
-  rgba(167,139,250,.18);
-
-
-  box-shadow:
-
-  0 20px 40px rgba(139,92,246,.3);
-
-}
-
-
-
-/* ICON + TEXT */
-
+/* =====================
+      CONTACT LINK
+===================== */
 
 .contact-card a {
+    position: relative;
 
-  display:flex;
+    width: 175px;
 
-  flex-direction:column;
+    min-height: 46px;
 
-  align-items:center;
+    display: flex;
 
-  gap:12px;
+    align-items: center;
 
-  text-decoration:none;
+    gap: 13px;
 
+    padding: 0 15px;
+
+    border-radius: 14px;
+
+    text-decoration: none;
+
+    background:
+        rgba(255, 255, 255, .028);
+
+    border:
+        1px solid rgba(255, 255, 255, .075);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .025);
+
+    backdrop-filter: blur(14px);
+
+    -webkit-backdrop-filter: blur(14px);
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
 }
 
 
+/* =====================
+      ICON
+===================== */
 
 .contact-card ion-icon {
+    flex: 0 0 auto;
 
-  font-size:2.8rem;
+    font-size: 20px;
 
-  color:#a78bfa;
+    color: #a78bfa;
 
+    transition:
+        transform .3s ease,
+        color .3s ease,
+        filter .3s ease;
 }
 
 
+/* =====================
+      TEXT
+===================== */
 
 .contact-card span {
+    color: #a1a1aa;
 
-  color:white;
+    font-size: 12px;
 
-  font-size:1rem;
+    font-weight: 500;
 
+    letter-spacing: .25px;
+
+    transition:
+        color .3s ease;
 }
 
 
+/* =====================
+      LINK HOVER
+===================== */
 
-.contact-card:hover ion-icon {
+.contact-card a:hover {
+    transform: translateY(-3px);
 
-  color:white;
+    background:
+        rgba(167, 139, 250, .075);
 
-  transform:scale(1.15);
+    border-color:
+        rgba(167, 139, 250, .3);
 
+    box-shadow:
+        0 12px 30px rgba(139, 92, 246, .12),
+        inset 0 1px 0 rgba(255, 255, 255, .04);
 }
 
 
+.contact-card a:hover ion-icon {
+    color: #ddd6fe;
 
-/* RESPONSIVE */
+    transform: scale(1.08);
 
-@media(max-width:900px){
-
-.container:has(.contact-section){
-
-  padding:130px 20px 40px;
-
+    filter:
+        drop-shadow(
+            0 0 9px rgba(167, 139, 250, .5)
+        );
 }
 
 
-}
-
-@media(max-width:768px){
-
-
-.container:has(.contact-section){
-
-  align-items:flex-start;
-
-  padding:120px 15px 40px;
-
+.contact-card a:hover span {
+    color: #f4f4f5;
 }
 
 
+/* =====================
+      TABLET
+===================== */
 
-.contact-section {
+@media (max-width: 750px) {
 
-  padding:25px 20px;
+    .contact-section {
+        padding: 42px 30px;
+    }
 
+    .contact-content {
+        margin-top: 42px;
+    }
+
+    .contact-brand {
+        min-height: 190px;
+    }
+
+    .contact-brand::before {
+        width: 190px;
+        height: 190px;
+    }
+
+    .brand-logo {
+        font-size: 4.2rem;
+    }
+
+    .contact-grid {
+        gap: 11px;
+    }
+
+    .contact-card a {
+        width: 160px;
+    }
 }
 
 
+/* =====================
+      MOBILE
+===================== */
 
-.contact-grid {
+@media (max-width: 600px) {
 
-  grid-template-columns:1fr;
+    .container:has(.contact-section) {
+        padding: 30px 15px;
+    }
 
+    .contact-section {
+        padding: 34px 18px;
+
+        border-radius: 26px;
+    }
+
+    .contact-section h1 {
+        font-size: 2rem;
+
+        letter-spacing: -1px;
+    }
+
+    .contact-section p {
+        font-size: 13px;
+
+        max-width: 330px;
+    }
+
+    .contact-content {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 28px;
+
+        margin-top: 34px;
+    }
+
+    .contact-brand {
+        min-height: 150px;
+    }
+
+    .contact-brand::before {
+        width: 170px;
+        height: 170px;
+    }
+
+    .brand-logo {
+        font-size: 3.7rem;
+
+        gap: 7px;
+
+        letter-spacing: -4px;
+    }
+
+    .contact-grid {
+        width: 100%;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 8px;
+    }
+
+    .contact-card {
+        width: auto;
+    }
+
+    .contact-card a {
+        width: auto;
+
+        min-height: 44px;
+
+        padding: 0 11px;
+
+        gap: 8px;
+
+        border-radius: 12px;
+    }
+
+    .contact-card ion-icon {
+        font-size: 19px;
+    }
+
+    .contact-card span {
+        font-size: 10px;
+    }
 }
 
 
+/* =====================
+      SMALL MOBILE
+===================== */
+
+@media (max-width: 380px) {
+
+    .contact-section {
+        padding: 30px 12px;
+    }
+
+    .contact-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-section p {
+        font-size: 12px;
+    }
+
+    .contact-brand {
+        min-height: 135px;
+    }
+
+    .contact-brand::before {
+        width: 150px;
+        height: 150px;
+    }
+
+    .brand-logo {
+        font-size: 3.2rem;
+
+        gap: 6px;
+
+        letter-spacing: -3px;
+    }
+
+    .contact-grid {
+        gap: 5px;
+    }
+
+    .contact-card a {
+        min-height: 41px;
+
+        padding: 0 8px;
+
+        gap: 6px;
+    }
+
+    .contact-card ion-icon {
+        font-size: 17px;
+    }
+
+    .contact-card span {
+        font-size: 9px;
+    }
 }
-
-
-
-@media(max-width:600px){
-
-
-.contact-section {
-
-  margin:130px 15px 60px;
-
-  padding:25px 15px;
-
-}
-
-
-
-.contact-grid {
-
-grid-template-columns:1fr;
-
-}
-
-.contact-card {
-  padding: 20px;
-}
-
-.contact-card span{
-  font-size: .85rem;
-}
-
-.contact-card ion-icon{
-  font-size: 2rem;
-}
-
-
-.contact-section h1 {
-
-font-size:2rem;
-
-}
-
-
-}
-
-

@@ -15,22 +15,37 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
-      <title>Emine Selimovska | Software Engineer</title>
-      <link rel="icon" type="image/png" href="./images/my-logo.png"/>
+    <title>Emine Selimovska | Software Engineer</title>
+    <link rel="icon" type="image/png" href="./images/my-logo.png" />
 
-<meta property="og:title" content="Emine Selimovska | Software Engineer" />
-<meta property="og:description" content="Portfolio showcasing my projects, skills and experience." />
-<meta property="og:image" content="https://emineselimovska-myportfolio.onrender.com/images/ES.jpg" />
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://emineselimovska-myportfolio.onrender.com/" />
+    <meta property="og:title" content="Emine Selimovska | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Portfolio showcasing my projects, skills and experience."
+    />
+    <meta
+      property="og:image"
+      content="https://emineselimovska-myportfolio.onrender.com/images/ES.jpg"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://emineselimovska-myportfolio.onrender.com/"
+    />
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Emine Selimovska | Software Engineer" />
-<meta name="twitter:description" content="Portfolio showcasing my projects, skills and experience." />
-<meta name="twitter:image" content="https://emineselimovska-myportfolio.onrender.com/images/ES.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Emine Selimovska | Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Portfolio showcasing my projects, skills and experience."
+    />
+    <meta
+      name="twitter:image"
+      content="https://emineselimovska-myportfolio.onrender.com/images/ES.jpg"
+    />
   </head>
   <body>
     <div class="background">
@@ -47,8 +62,12 @@
     </div>
 
     <header>
+      <button class="menu-toggle">
+        <ion-icon name="layers"></ion-icon>
+      </button>
+
       <nav>
-         <div class="home nav-item">
+        <div class="home nav-item">
           <a href="index.html">
             <ion-icon name="home"></ion-icon>
             <span>Home</span>
@@ -87,7 +106,7 @@
         </div>
         <div class="contact nav-item">
           <a href="contact.html"
-          ><ion-icon name="mail"></ion-icon>
+            ><ion-icon name="mail"></ion-icon>
             <span>Contact</span>
           </a>
         </div>
@@ -121,26 +140,24 @@
           </p>
 
           <div class="hero-buttons">
-            <a href="projects.html"> View Projects </a>
+            <a href="experience.html">Explore My Work</a>
 
             <a href="contact.html"> Contact Me </a>
           </div>
         </div>
 
         <div class="hero-image">
+          <div class="world-map"></div>
           <img class="userPic" src="./images/emine-pic.jpg" alt="emine-pic" />
         </div>
       </div>
     </main>
 
     <footer class="footer">
-      <a href="mailto:emine.selimovska@outlook.com">Email</a>
-      <span>·</span>
-      <a href="https://www.linkedin.com/in/emine-selimovska" target="_blank"
-        >LinkedIn</a
-      >
-      <span>·</span>
-      <a href="https://github.com/EmineSelimovska" target="_blank">GitHub</a>
+      <div class="footer-line"></div>
+      <a href="contact.html" class="footer-connect">
+        <span>·</span> Say hello <span>·</span>
+      </a>
     </footer>
   </body>
 
@@ -148,4 +165,5 @@
     type="module"
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
   ></script>
+  <script src="./js/script.js"></script>
 </html>
