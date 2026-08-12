@@ -672,19 +672,34 @@ BUTTONS
 }
 
 .hero-buttons a {
-  padding: 14px 28px;
+    width: 160px;
+    height: 48px;
 
-  border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  text-decoration: none;
+    box-sizing: border-box;
 
-  font-weight: 600;
+    padding: 0 20px;
 
-  color: white;
+    border-radius: 50px;
 
-  background: linear-gradient(90deg, #8b5cf6, #a78bfa);
+    text-decoration: none;
 
-  transition: 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8b5cf6,
+            #a78bfa
+        );
+
+    transition: .3s ease;
 }
 
 .hero-buttons a:last-child {
@@ -702,259 +717,304 @@ RESPONSIVE
 ===================== */
 
 @media (max-width: 1100px) {
-  nav {
-    gap: 10px;
 
-    padding: 12px 16px;
-  }
+    nav {
+        gap: 10px;
+        padding: 12px 16px;
+    }
 
-  .nav-item ion-icon {
-    font-size: 20px;
-  }
+    .nav-item ion-icon {
+        font-size: 20px;
+    }
 
-  .nav-item span {
-    font-size: 10px;
-  }
+    .nav-item span {
+        font-size: 10px;
+    }
 
-  .me {
-    flex-direction: column;
+    .me {
+        flex-direction: column;
 
-    text-align: center;
+        text-align: center;
 
-    gap: 60px;
-  }
+        gap: 60px;
+    }
 
-  .description {
-    margin-left: auto;
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-    margin-right: auto;
-  }
-
-  .hero-buttons {
-    justify-content: center;
-  }
+    .hero-buttons {
+        justify-content: center;
+    }
 }
 
+
 /* =====================
-RESPONSIVE
+      TABLET / MENU
 ===================== */
 
 @media (max-width: 900px) {
-  header {
-    padding-top: 15px;
 
-    width: 100%;
-  }
+    header {
+        padding-top: 15px;
+        width: 100%;
+    }
 
-  /* LAYERS BUTTON */
 
-  .menu-toggle {
-    display: flex;
-  }
+    /* LAYERS BUTTON */
 
-  /* MOBILE DROPDOWN MENU */
+    .menu-toggle {
+        display: flex;
+    }
 
-  nav {
-    position: absolute;
 
-    top: 80px;
+    /* MOBILE DROPDOWN MENU */
 
-    left: 50%;
+    nav {
+        position: absolute;
 
-    transform: translateX(-50%);
+        top: 80px;
 
-    flex-direction: column;
+        left: 50%;
 
-    width: 230px;
+        transform: translateX(-50%);
 
-    gap: 10px;
+        flex-direction: column;
 
-    padding: 20px;
+        width: 230px;
 
-    border-radius: 25px;
+        gap: 10px;
 
-    display: none;
-  }
+        padding: 20px;
 
-  /* OPEN MENU */
+        border-radius: 25px;
 
-  nav.active {
-    display: flex;
-  }
+        display: none;
+    }
 
-  .nav-item {
-    width: 100%;
-  }
 
-  .nav-item a {
-    flex-direction: row;
+    /* OPEN MENU */
 
-    justify-content: flex-start;
+    nav.active {
+        display: flex;
+    }
 
-    gap: 15px;
-  }
 
-  .nav-item ion-icon {
-    font-size: 22px;
-  }
+    .nav-item {
+        width: 100%;
+    }
 
-  .nav-item span {
-    display: block;
 
-    font-size: 14px;
-  }
+    .nav-item a {
+        flex-direction: row;
 
-  .me {
-    flex-direction: column;
+        justify-content: flex-start;
 
-    text-align: center;
+        gap: 15px;
+    }
 
-    gap: 60px;
-  }
 
-  .hero-text {
-    max-width: 90%;
-  }
+    .nav-item ion-icon {
+        font-size: 22px;
+    }
 
-  .description {
-    margin-left: auto;
 
-    margin-right: auto;
-  }
+    .nav-item span {
+        display: block;
 
-  .hero-buttons {
-    justify-content: center;
-  }
+        font-size: 14px;
+    }
 
-  .world-map {
-    width: 420px;
 
-    height: 420px;
+    .me {
+        flex-direction: column;
 
-    opacity: 0.18;
-  }
+        text-align: center;
 
-  .userPic {
-    width: 200px;
+        gap: 60px;
+    }
 
-    height: 200px;
-  }
+
+    .hero-text {
+        max-width: 90%;
+    }
+
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+
+    .world-map {
+        width: 420px;
+        height: 420px;
+
+        opacity: 0.18;
+    }
+
+
+    .userPic {
+        width: 200px;
+        height: 200px;
+    }
 }
 
-/* SMALL HEIGHT SCREENS
-   Nest Hub / landscape tablets
-*/
+
+/* =====================
+      SMALL HEIGHT SCREENS
+      Nest Hub / landscape tablets
+===================== */
 
 @media (max-height: 700px) {
-  header {
-    padding-top: 10px;
-  }
 
-  .menu-toggle {
-    width: 50px;
+    header {
+        padding-top: 10px;
+    }
 
-    height: 50px;
-  }
 
-  .container {
-    padding: 10px 20px;
-  }
+    .menu-toggle {
+        width: 50px;
+        height: 50px;
+    }
 
-  .me {
-    gap: 25px;
-  }
 
-  .userPic {
-    width: 150px;
+    .container {
+        padding: 10px 20px;
+    }
 
-    height: 150px;
-  }
 
-  .world-map {
-    width: 400px;
+    .me {
+        gap: 25px;
+    }
 
-    height: 400px;
-  }
 
-  .footer {
-    padding: 10px;
-  }
+    .userPic {
+        width: 150px;
+        height: 150px;
+    }
+
+
+    .world-map {
+        width: 400px;
+        height: 400px;
+    }
+
+
+    .footer {
+        padding: 10px;
+    }
 }
+
+
+/* =====================
+      MOBILE
+===================== */
 
 @media (max-width: 600px) {
-  .container {
-    padding: 30px 15px;
-  }
 
-  .world-map {
-    display: none;
-  }
+    .container {
+        padding: 30px 15px;
+    }
 
-  .hero-text h1 {
-    font-size: 38px;
-  }
 
-  .hello {
-    font-size: 18px;
-  }
+    .world-map {
+        display: none;
+    }
 
-  .animation {
-    font-size: 18px;
-  }
 
-  .description {
-    font-size: 16px;
-  }
+    .hero-text h1 {
+        font-size: 38px;
+    }
 
-  .hero-buttons {
-    flex-direction: column;
 
-    width: 100%;
-  }
+    .hello {
+        font-size: 18px;
+    }
 
-  .hero-buttons a {
-    width: 100%;
 
-    text-align: center;
-  }
+    .animation {
+        font-size: 18px;
+    }
 
-  .userPic {
-    width: 160px;
 
-    height: 160px;
-  }
+    .description {
+        font-size: 16px;
+    }
 
-  /* layers button smaller */
 
-  .menu-toggle {
-    width: 48px;
+    /* HERO BUTTONS */
 
-    height: 48px;
+    .hero-buttons {
+        flex-direction: column;
 
-    font-size: 25px;
-  }
+        width: 100%;
 
-  nav {
-    width: 90vw;
+        gap: 12px;
+    }
 
-    max-width: 320px;
-  }
+
+    .hero-buttons a {
+        width: 100%;
+
+        height: 48px;
+
+        text-align: center;
+
+        font-size: 14px;
+    }
+
+
+    .userPic {
+        width: 160px;
+        height: 160px;
+    }
+
+
+    /* LAYERS BUTTON */
+
+    .menu-toggle {
+        width: 48px;
+        height: 48px;
+
+        font-size: 25px;
+    }
+
+
+    nav {
+        width: 90vw;
+
+        max-width: 320px;
+    }
 }
 
+
+/* =====================
+      SMALL MOBILE
+===================== */
+
 @media (max-width: 380px) {
-  .hero-text h1 {
-    font-size: 32px;
-  }
 
-  .menu-toggle {
-    width: 45px;
+    .hero-text h1 {
+        font-size: 32px;
+    }
 
-    height: 45px;
 
-    font-size: 22px;
-  }
+    .menu-toggle {
+        width: 45px;
+        height: 45px;
 
-  nav {
-    width: 85vw;
-  }
+        font-size: 22px;
+    }
+
+
+    nav {
+        width: 85vw;
+    }
 }
