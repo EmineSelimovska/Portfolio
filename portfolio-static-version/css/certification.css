@@ -3,490 +3,452 @@
 ===================== */
 
 .container:has(.cerf) {
-    flex: 1;
+  flex: 1;
 
-    width: 100%;
+  width: 100%;
 
-    display: flex;
+  display: flex;
 
-    justify-content: center;
+  justify-content: center;
 
-    align-items: flex-start;
+  align-items: flex-start;
 
-    padding: 60px 20px 50px;
+  /* повече въздух между header и main */
+  padding: 150px 20px 90px;
 
-    position: relative;
+  position: relative;
 
-    z-index: 1;
+  z-index: 1;
 }
-
 
 /* =====================
       MAIN CONTENT
 ===================== */
 
 .cerf {
-    width: 100%;
+  width: 100%;
 
-    max-width: 1120px;
+  max-width: 1050px;
 
-    text-align: center;
+  text-align: center;
 }
-
 
 /* =====================
       TITLE
 ===================== */
 
 .cerf h1 {
-    margin: 0 0 12px;
+  margin: 0 0 14px;
 
-    font-size: clamp(2.2rem, 5vw, 3.1rem);
+  font-size: clamp(2.1rem, 4vw, 2.8rem);
 
-    line-height: 1.1;
+  line-height: 1.1;
 
-    background:
-        linear-gradient(
-            90deg,
-            #ffffff,
-            #a78bfa
-        );
+  background: linear-gradient(90deg, #ffffff, #a78bfa);
 
-    -webkit-background-clip: text;
+  -webkit-background-clip: text;
 
-    background-clip: text;
+  background-clip: text;
 
-    color: transparent;
+  color: transparent;
 }
-
 
 /* =====================
       INTRO
 ===================== */
 
 .certificates-intro {
-    max-width: 560px;
+  max-width: 540px;
 
-    margin: 0 auto 38px;
+  margin: 0 auto 42px;
 
-    color: #a1a1aa;
+  color: #a1a1aa;
 
-    font-size: 15px;
+  font-size: 15px;
 
-    line-height: 1.6;
+  line-height: 1.6;
 }
-
 
 /* =====================
       GALLERY
 ===================== */
 
 .certificate-gallery {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 
-    gap: 18px;
+  gap: 20px;
 
-    text-align: left;
+  text-align: left;
 }
-
 
 /* =====================
       CERTIFICATE CARD
 ===================== */
 
 .certificate-card {
-    display: flex;
+  display: flex;
 
-    flex-direction: column;
+  flex-direction: column;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    background:
-        rgba(255, 255, 255, .045);
+  background: rgba(255, 255, 255, 0.045);
 
-    backdrop-filter: blur(18px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 
-    -webkit-backdrop-filter: blur(18px);
+  border-radius: 20px;
 
-    border:
-        1px solid rgba(255, 255, 255, .10);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 
-    border-radius: 20px;
-
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, .25);
-
-    transition:
-        transform .35s ease,
-        border-color .35s ease,
-        box-shadow .35s ease,
-        background .35s ease;
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
 }
-
 
 .certificate-card:hover {
-    transform: translateY(-6px);
+  transform: translateY(-5px);
 
-    background:
-        rgba(167, 139, 250, .065);
+  background: rgba(167, 139, 250, 0.065);
 
-    border-color:
-        rgba(167, 139, 250, .35);
+  border-color: rgba(167, 139, 250, 0.35);
 
-    box-shadow:
-        0 20px 45px rgba(139, 92, 246, .18);
+  box-shadow: 0 20px 45px rgba(139, 92, 246, 0.18);
 }
-
 
 /* =====================
       IMAGE CONTAINER
 ===================== */
 
 .certificate-image {
-    position: relative;
+  position: relative;
 
-    width: 100%;
+  width: 100%;
 
-    height: 150px;
+  height: 135px;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    background:
-        rgba(0, 0, 0, .18);
+  background: rgba(0, 0, 0, 0.18);
 
-    border-bottom:
-        1px solid rgba(255, 255, 255, .08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
-
 
 /* =====================
       CERTIFICATE IMAGE
 ===================== */
 
 .certificate-image img {
-    width: 100%;
+  width: 100%;
 
-    height: 100%;
+  height: 100%;
 
-    object-fit: contain;
+  object-fit: contain;
 
-    display: block;
+  display: block;
 
-    padding: 10px;
+  padding: 9px;
 
-    transition:
-        transform .4s ease,
-        filter .4s ease;
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
 }
-
 
 .certificate-card:hover .certificate-image img {
-    transform: scale(1.035);
+  transform: scale(1.035);
 
-    filter: brightness(.72);
+  filter: brightness(0.72);
 }
-
 
 /* =====================
       VIEW BUTTON
 ===================== */
 
 .certificate-image a {
-    position: absolute;
+  position: absolute;
 
-    left: 50%;
+  left: 50%;
 
-    bottom: 12px;
+  bottom: 10px;
 
-    transform: translate(-50%, 10px);
+  transform: translate(-50%, 10px);
 
-    display: inline-flex;
+  display: inline-flex;
 
-    align-items: center;
+  align-items: center;
 
-    justify-content: center;
+  justify-content: center;
 
-    gap: 7px;
+  gap: 7px;
 
-    padding: 8px 12px;
+  padding: 7px 11px;
 
-    border-radius: 10px;
+  border-radius: 10px;
 
-    color: #ffffff;
+  color: #ffffff;
 
-    background:
-        rgba(124, 58, 237, .88);
+  background: rgba(124, 58, 237, 0.88);
 
-    border:
-        1px solid rgba(255, 255, 255, .18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 
-    backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 
-    -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 
-    text-decoration: none;
+  text-decoration: none;
 
-    white-space: nowrap;
+  white-space: nowrap;
 
-    font-size: 11px;
+  font-size: 11px;
 
-    font-weight: 600;
+  font-weight: 600;
 
-    opacity: 0;
+  opacity: 0;
 
-    transition:
-        opacity .3s ease,
-        transform .3s ease,
-        background .3s ease,
-        box-shadow .3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-
-/* SHOW BUTTON */
+/* =====================
+      SHOW BUTTON
+===================== */
 
 .certificate-card:hover .certificate-image a {
-    opacity: 1;
+  opacity: 1;
 
-    transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 
-
-/* BUTTON HOVER */
+/* =====================
+      BUTTON HOVER
+===================== */
 
 .certificate-image a:hover {
-    background:
-        rgba(139, 92, 246, .98);
+  background: rgba(139, 92, 246, 0.98);
 
-    box-shadow:
-        0 8px 22px rgba(139, 92, 246, .35);
+  box-shadow: 0 8px 22px rgba(139, 92, 246, 0.35);
 }
-
 
 /* =====================
       BUTTON ICON
 ===================== */
 
 .certificate-image a ion-icon {
-    font-size: 14px;
+  font-size: 14px;
 
-    transition:
-        transform .3s ease;
+  transition: transform 0.3s ease;
 }
-
 
 .certificate-image a:hover ion-icon {
-    transform: translate(2px, -2px);
+  transform: translate(2px, -2px);
 }
-
 
 /* =====================
       INFORMATION
 ===================== */
 
 .certificate-info {
-    display: flex;
+  display: flex;
 
-    flex-direction: column;
+  flex-direction: column;
 
-    flex: 1;
+  flex: 1;
 
-    padding: 16px 17px 18px;
+  padding: 15px 16px 16px;
 }
-
 
 /* =====================
       CARD TITLE
 ===================== */
 
 .certificate-info h2 {
-    min-height: 42px;
+  min-height: 42px;
 
-    margin: 0 0 8px;
+  margin: 0 0 7px;
 
-    color: #f5f5f5;
+  color: #f5f5f5;
 
-    font-size: 15px;
+  font-size: 14px;
 
-    font-weight: 600;
+  font-weight: 600;
 
-    line-height: 1.4;
+  line-height: 1.4;
 }
-
 
 /* =====================
       DESCRIPTION
 ===================== */
 
 .certificate-info p {
-    min-height: 63px;
+  min-height: 60px;
 
-    margin: 0 0 12px;
+  margin: 0 0 10px;
 
-    color: #a1a1aa;
+  color: #a1a1aa;
 
-    font-size: 13px;
+  font-size: 12px;
 
-    line-height: 1.6;
+  line-height: 1.6;
 }
-
 
 /* =====================
       DATE
 ===================== */
 
 .certificate-date {
-    margin-top: auto;
+  margin-top: auto;
 
-    color: #71717a;
+  color: #71717a;
 
-    font-size: 10px;
+  font-size: 10px;
 
-    letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
-
 
 /* =====================
       TABLET
 ===================== */
 
 @media (max-width: 1050px) {
+  .cerf {
+    max-width: 900px;
+  }
 
-    .cerf {
-        max-width: 900px;
-    }
-
-    .certificate-gallery {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-
-        gap: 18px;
-    }
-
+  .certificate-gallery {
+    gap: 18px;
+  }
 }
-
 
 /* =====================
       SMALL TABLET
 ===================== */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+  .container:has(.cerf) {
+    padding-top: 135px;
+    padding-bottom: 70px;
+  }
 
-    .container:has(.cerf) {
-        padding: 50px 20px 40px;
-    }
+  .certificate-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    .certificate-gallery {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
 
-        gap: 18px;
-    }
-
-    .certificate-image {
-        height: 175px;
-    }
-
+  .certificate-image {
+    height: 160px;
+  }
 }
-
 
 /* =====================
       MOBILE
 ===================== */
 
 @media (max-width: 600px) {
+  .container:has(.cerf) {
+    padding: 115px 15px 55px;
+  }
 
-    .container:has(.cerf) {
-        padding: 45px 15px 40px;
-    }
+  .cerf {
+    max-width: 100%;
+  }
 
-    .cerf h1 {
-        font-size: 2rem;
-    }
+  .cerf h1 {
+    font-size: 2rem;
+  }
 
-    .certificates-intro {
-        font-size: 14px;
+  .certificates-intro {
+    font-size: 14px;
 
-        margin-bottom: 30px;
-    }
+    margin-bottom: 30px;
+  }
 
-    .certificate-gallery {
-        grid-template-columns: 1fr;
+  .certificate-gallery {
+    grid-template-columns: 1fr;
 
-        gap: 16px;
-    }
+    gap: 16px;
+  }
 
-    .certificate-image {
-        height: 220px;
-    }
+  .certificate-image {
+    height: 210px;
+  }
 
-    .certificate-info {
-        padding: 18px;
-    }
+  .certificate-info {
+    padding: 18px;
+  }
 
-    .certificate-info h2 {
-        min-height: auto;
+  .certificate-info h2 {
+    min-height: auto;
 
-        font-size: 16px;
-    }
+    font-size: 16px;
+  }
 
-    .certificate-info p {
-        min-height: auto;
+  .certificate-info p {
+    min-height: auto;
 
-        font-size: 13px;
-    }
+    font-size: 13px;
+  }
 
-    /*
+  /* 
        На mobile няма hover,
        затова бутонът е винаги видим.
     */
 
-    .certificate-image a {
-        opacity: 1;
+  .certificate-image a {
+    opacity: 1;
 
-        transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
 
-        bottom: 14px;
+    bottom: 14px;
 
-        font-size: 12px;
+    font-size: 12px;
 
-        padding: 9px 14px;
-    }
-
+    padding: 9px 14px;
+  }
 }
-
 
 /* =====================
       SMALL MOBILE
 ===================== */
 
 @media (max-width: 380px) {
+  .container:has(.cerf) {
+    padding-top: 105px;
 
-    .container:has(.cerf) {
-        padding-left: 12px;
+    padding-left: 12px;
 
-        padding-right: 12px;
-    }
+    padding-right: 12px;
 
-    .certificate-image {
-        height: 200px;
-    }
+    padding-bottom: 50px;
+  }
 
-    .certificate-info {
-        padding: 16px;
-    }
+  .certificate-image {
+    height: 190px;
+  }
 
-    .certificate-info h2 {
-        font-size: 15px;
-    }
+  .certificate-info {
+    padding: 16px;
+  }
 
-    .certificate-info p {
-        font-size: 12px;
-    }
+  .certificate-info h2 {
+    font-size: 15px;
+  }
 
-    .certificate-image a {
-        font-size: 11px;
+  .certificate-info p {
+    font-size: 12px;
+  }
 
-        padding: 8px 12px;
-    }
+  .certificate-image a {
+    font-size: 11px;
 
+    padding: 8px 12px;
+  }
 }

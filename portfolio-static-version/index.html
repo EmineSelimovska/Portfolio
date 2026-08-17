@@ -2,160 +2,513 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://https://unpkg.com/ionicons@7.1.0/dist/css/ionicons.min.css"
-    />
+
     <link
       href="https://fonts.googleapis.com/css?family=Josefin+Sans"
       rel="stylesheet"
     />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Emine Selimovska | Software Engineer</title>
+
+    <title>Emine Selimovska | Software Developer</title>
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="./images/my-logo.png" />
 
-    <meta property="og:title" content="Emine Selimovska | Software Engineer" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Emine Selimovska | Software Developer" />
+
     <meta
       property="og:description"
       content="Portfolio showcasing my projects, skills and experience."
     />
+
     <meta
       property="og:image"
-      content="https://emineselimovska-myportfolio.onrender.com/images/ES.jpg"
+      content="https://emineselimovska-myportfolio.onrender.com/images/ES.png"
     />
+
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:type" content="website" />
+
     <meta
       property="og:url"
       content="https://emineselimovska-myportfolio.onrender.com/"
     />
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Emine Selimovska | Software Engineer" />
+
+    <meta
+      name="twitter:title"
+      content="Emine Selimovska | Software Developer"
+    />
+
     <meta
       name="twitter:description"
       content="Portfolio showcasing my projects, skills and experience."
     />
+
     <meta
       name="twitter:image"
-      content="https://emineselimovska-myportfolio.onrender.com/images/ES.jpg"
+      content="https://emineselimovska-myportfolio.onrender.com/images/ES.png"
     />
   </head>
-  <body>
-    <div class="background">
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-    </div>
 
+  <body>
     <header>
       <button class="menu-toggle">
         <ion-icon name="layers"></ion-icon>
       </button>
-
       <nav>
         <div class="home nav-item">
-          <a href="index.html">
+          <a href="#home">
             <ion-icon name="home"></ion-icon>
             <span>Home</span>
           </a>
         </div>
+
+        <div class="experience nav-item">
+          <a href="#experience">
+            <ion-icon name="briefcase"></ion-icon>
+            <span>Experience</span>
+          </a>
+        </div>
+
+        <div class="projects nav-item">
+          <a href="#projects">
+            <ion-icon name="folder-open"></ion-icon>
+            <span>Projects</span>
+          </a>
+        </div>
+
         <div class="education nav-item">
           <a href="education.html">
             <ion-icon name="school"></ion-icon>
             <span>Education</span>
           </a>
         </div>
-        <div class="experience nav-item">
-          <a href="experience.html">
-            <ion-icon name="briefcase"></ion-icon>
-            <span>Experience</span>
-          </a>
-        </div>
-        <div class="projects nav-item">
-          <a href="projects.html">
-            <ion-icon name="folder-open"></ion-icon>
-            <span>Projects</span>
-          </a>
-        </div>
 
         <div class="certification nav-item">
           <a href="certification.html">
             <ion-icon name="document"></ion-icon>
-            <span>Certification</span>
+            <span>Certificates</span>
           </a>
         </div>
+
         <div class="skills nav-item">
-          <a href="skills.html">
+          <a href="#skills">
             <ion-icon name="flower"></ion-icon>
             <span>Skills</span>
           </a>
         </div>
+
         <div class="contact nav-item">
-          <a href="contact.html"
-            ><ion-icon name="mail"></ion-icon>
+          <a href="#contact">
+            <ion-icon name="mail"></ion-icon>
             <span>Contact</span>
-          </a>
-        </div>
-        <div class="about nav-item">
-          <a href="about.html"
-            ><ion-icon name="woman"></ion-icon>
-            <span>About me</span>
           </a>
         </div>
       </nav>
     </header>
 
-    <main class="container">
-      <div class="me">
-        <div class="hero-text">
-          <p class="hello">Hello 👋 I'm</p>
+    <main>
+      <!-- HOME -->
+      <section id="home">
+        <div class="me">
+          <div class="hero-text">
+            <p class="hello">Hello 👋 I'm</p>
 
-          <h1>Emine Selimovska</h1>
+            <h1>Emine Selimovska</h1>
 
-          <section class="animation">
-            <div class="animation-inner">
-              <div>Frontend Developer</div>
-              <div>JavaScript Developer</div>
-              <div>Software Engineer</div>
+            <p class="profession">Software Developer</p>
+
+            <p class="description">
+              I build modern, responsive web applications with clean code and
+              great user experience.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#experience">Explore My Work</a>
+              <a href="#contact">Contact Me</a>
+              <a href="./documents/Emine-Selimovska-CV.pdf" download>
+                My CV
+              </a>
             </div>
-          </section>
+          </div>
 
-          <p class="description">
-            I build modern, responsive web applications with clean code and
-            great user experience.
-          </p>
+          <div class="hero-image">
+            <div class="world-map"></div>
 
-          <div class="hero-buttons">
-            <a href="experience.html">Explore My Work</a>
-
-            <a href="contact.html"> Contact Me </a>
+            <img
+              class="userPic"
+              src="./images/emine-pic.jpg"
+              alt="Emine Selimovska"
+            />
           </div>
         </div>
+      </section>
 
-        <div class="hero-image">
-          <div class="world-map"></div>
-          <img class="userPic" src="./images/emine-pic.jpg" alt="emine-pic" />
+      <!-- EXPERIENCE -->
+      <section id="experience" class="experience-section">
+        <div class="section-header">
+          <h2>Experience</h2>
+
+          <p>
+            My professional experience and hands-on work in software
+            development.
+          </p>
         </div>
-      </div>
+
+        <div class="project-content">
+          <!-- Msell LTD -->
+          <div class="project-card">
+            <div class="project-header">
+              <h1>Software Developer</h1>
+
+              <p class="subtitle">Msell LTD Real Estate</p>
+
+              <span class="date">January 2025 - Present</span>
+            </div>
+
+            <a
+              class="company-link"
+              href="https://www.msellestate.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Website
+            </a>
+
+            <p class="project-description">
+              Full-stack real estate platform focused on property management,
+              bookings and customer inquiries. Developed modern user interfaces
+              and backend services with responsive design and clean
+              architecture.
+            </p>
+
+            <div class="tech-stack">
+              <span>ReactJS</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+            </div>
+
+            <div class="features">
+              <h2>Key Contributions</h2>
+
+              <ul>
+                <li>
+                  Developed and maintained a full-stack real estate platform for
+                  property management, bookings and customer inquiries.
+                </li>
+
+                <li>
+                  Built an admin dashboard for managing properties, bookings and
+                  customer inquiries.
+                </li>
+
+                <li>
+                  Developed user-facing functionality for property inquiries and
+                  viewing appointments.
+                </li>
+
+                <li>
+                  Improved responsive design, application performance and
+                  overall user experience.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Cost-Effective Solution -->
+          <div class="project-card">
+            <div class="project-header">
+              <h1>Frontend Developer Intern</h1>
+
+              <p class="subtitle">Cost-Effective Solution</p>
+
+              <span class="date">May - October 2024</span>
+            </div>
+
+            <p class="project-description">
+              Frontend development for an ERP platform that allows clients to
+              manage their products and connect their online stores.
+            </p>
+
+            <div class="tech-stack">
+              <span>ReactJS</span>
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>REST API Integration</span>
+            </div>
+
+            <div class="features">
+              <h2>Key Contributions</h2>
+
+              <ul>
+                <li>
+                  Developed frontend features for product management and data
+                  visualization within the ERP platform.
+                </li>
+
+                <li>
+                  Translated Figma designs into functional and user-friendly
+                  interfaces.
+                </li>
+
+                <li>
+                  Integrated frontend components with REST APIs for reliable
+                  data communication.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="projects-section">
+        <div class="section-header">
+          <h2>Projects</h2>
+
+          <p>
+            Selected projects developed during my software development studies.
+          </p>
+        </div>
+
+        <div class="project-content">
+          <!-- PROJECT 1 -->
+          <div class="project-card">
+            <div class="project-header">
+              <h1>E-commerce Pizza Ordering App</h1>
+
+              <p class="subtitle">Software University (SoftUni)</p>
+
+              <span class="date">February - April 2024</span>
+            </div>
+
+            <p class="project-description">
+              Full-stack e-commerce application for ordering pizzas. Includes
+              authentication, product management, shopping cart, online payment
+              and order processing.
+            </p>
+
+            <div class="tech-stack">
+              <span>Angular</span>
+              <span>NodeJS</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>PayPal API</span>
+            </div>
+
+            <div class="features">
+              <h2>Key Contributions</h2>
+
+              <ul>
+                <li>Implemented user authentication and account validation.</li>
+
+                <li>Built a shopping cart with product quantity management.</li>
+
+                <li>
+                  Integrated Google Maps and PayPal for location-based features
+                  and online payments.
+                </li>
+
+                <li>Implemented product search and filtering functionality.</li>
+              </ul>
+            </div>
+
+            <a
+              class="github-btn"
+              href="https://github.com/EmineSelimovska/angular-project-express-pizza"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ion-icon name="logo-github"></ion-icon>
+              View Code
+            </a>
+          </div>
+
+          <!-- PROJECT 2 -->
+          <div class="project-card">
+            <div class="project-header">
+              <h1>Real Estate Platform</h1>
+
+              <p class="subtitle">Software University (SoftUni)</p>
+
+              <span class="date">October - December 2023</span>
+            </div>
+
+            <p class="project-description">
+              React-based real estate application with user authentication,
+              property management and comments system.
+            </p>
+
+            <div class="tech-stack">
+              <span>ReactJS</span>
+              <span>React Router</span>
+              <span>CSS</span>
+              <span>Leaflet</span>
+              <span>SoftUni Server</span>
+            </div>
+
+            <div class="features">
+              <h2>Key Contributions</h2>
+
+              <ul>
+                <li>
+                  Implemented user registration, authentication and account
+                  management.
+                </li>
+
+                <li>
+                  Developed functionality for creating, editing and deleting
+                  properties.
+                </li>
+
+                <li>Implemented a comments system for property listings.</li>
+
+                <li>
+                  Integrated interactive maps for displaying property locations.
+                </li>
+              </ul>
+            </div>
+
+            <a
+              class="github-btn"
+              href="https://github.com/EmineSelimovska/ReactJS-Project"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ion-icon name="logo-github"></ion-icon>
+              View Code
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="skills-section">
+        <div class="section-header">
+          <h2>Skills</h2>
+
+          <p>
+            Technologies and tools I use for building modern web applications.
+          </p>
+        </div>
+
+        <div class="skills-content">
+          <div class="skills-category">
+            <h3>Frontend</h3>
+
+            <div class="skills-tags">
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>ReactJS</span>
+              <span>Angular</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h3>Backend</h3>
+
+            <div class="skills-tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>RESTful APIs</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h3>Database</h3>
+
+            <div class="skills-tags">
+              <span>SQL (MySQL)</span>
+              <span>NoSQL (MongoDB)</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h3>Tools & DevOps</h3>
+
+            <div class="skills-tags">
+              <span>Git</span>
+              <span>CI/CD</span>
+              <span>GitHub Actions</span>
+              <span>Jenkins</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h3>Design Tools</h3>
+
+            <div class="skills-tags">
+              <span>Figma</span>
+              <span>Canva</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact-section">
+        <div class="section-header">
+          <h2>Contact</h2>
+
+          <p>I'm open to new opportunities and interesting projects.</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-grid">
+            <div class="contact-card">
+              <a href="mailto:emine.selimovska@outlook.com">
+                <ion-icon name="mail-outline"></ion-icon>
+                <span>Email</span>
+              </a>
+            </div>
+
+            <div class="contact-card">
+              <a
+                href="https://www.linkedin.com/in/emine-selimovska"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+
+            <div class="contact-card">
+              <a
+                href="https://github.com/EmineSelimovska"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="footer-line"></div>
-      <a href="contact.html" class="footer-connect">
+      <a href="#contact" class="footer-connect">
         <span>·</span> Say hello <span>·</span>
       </a>
     </footer>

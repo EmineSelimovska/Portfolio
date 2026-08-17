@@ -6,16 +6,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://https://unpkg.com/ionicons@7.1.0/dist/css/ionicons.min.css"
-    />
+
     <link rel="stylesheet" href="./css/education.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Education | Emine Selimovska</title>
     <link rel="icon" type="image/png" href="./images/my-logo.png" />
 
-    <meta property="og:title" content="Emine Selimovska | Software Engineer" />
+    <meta property="og:title" content="Emine Selimovska | Software Developer" />
     <meta
       property="og:description"
       content="Portfolio showcasing my projects, skills and experience."
@@ -31,30 +28,17 @@
     />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Emine Selimovska | Software Engineer" />
+    <meta name="twitter:title" content="Emine Selimovska | Software Developer" />
     <meta
       name="twitter:description"
       content="Portfolio showcasing my projects, skills and experience."
     />
     <meta
       name="twitter:image"
-      content="https://emineselimovska-myportfolio.onrender.com/images/ES.jpg"
+      content="https://emineselimovska-myportfolio.onrender.com/images/ES.png"
     />
   </head>
   <body>
-    <div class="background">
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-    </div>
-
     <header>
       <button class="menu-toggle">
         <ion-icon name="layers"></ion-icon>
@@ -62,165 +46,184 @@
 
       <nav>
         <div class="home nav-item">
-          <a href="index.html">
+          <a href="index.html#home">
             <ion-icon name="home"></ion-icon>
             <span>Home</span>
           </a>
         </div>
+
+        <div class="experience nav-item">
+          <a href="index.html#experience">
+            <ion-icon name="briefcase"></ion-icon>
+            <span>Experience</span>
+          </a>
+        </div>
+
+        <div class="projects nav-item">
+          <a href="index.html#projects">
+            <ion-icon name="folder-open"></ion-icon>
+            <span>Projects</span>
+          </a>
+        </div>
+
         <div class="education nav-item">
           <a href="education.html">
             <ion-icon name="school"></ion-icon>
             <span>Education</span>
           </a>
         </div>
-        <div class="experience nav-item">
-          <a href="experience.html">
-            <ion-icon name="briefcase"></ion-icon>
-            <span>Experience</span>
-          </a>
-        </div>
-        <div class="projects nav-item">
-          <a href="projects.html">
-            <ion-icon name="folder-open"></ion-icon>
-            <span>Projects</span>
-          </a>
-        </div>
 
         <div class="certification nav-item">
           <a href="certification.html">
             <ion-icon name="document"></ion-icon>
-            <span>Certification</span>
+            <span>Certificates</span>
           </a>
         </div>
+
         <div class="skills nav-item">
-          <a href="skills.html">
+          <a href="index.html#skills">
             <ion-icon name="flower"></ion-icon>
             <span>Skills</span>
           </a>
         </div>
+
         <div class="contact nav-item">
-          <a href="contact.html"
-            ><ion-icon name="mail"></ion-icon>
+          <a href="index.html#contact">
+            <ion-icon name="mail"></ion-icon>
             <span>Contact</span>
-          </a>
-        </div>
-        <div class="about nav-item">
-          <a href="about.html"
-            ><ion-icon name="woman"></ion-icon>
-            <span>About me</span>
           </a>
         </div>
       </nav>
     </header>
 
-    <main class="container">
-      <div class="educ">
-        <div class="text">
-          <div class="image">
-            <img src="./images/softuni.png" alt="" />
-          </div>
-          <div class="cart-educ">
-            <h1>Front-End Developer with JavaScript</h1>
+    <main>
+      <section class="education-section">
+        <div class="section-header">
+          <h2>Education</h2>
 
-            <h3>2022 - 2024 - Software University (SoftUni)</h3>
+          <p>
+            My academic background and professional software development
+            training.
+          </p>
+        </div>
 
-            <p>
-              Completed professional training in JavaScript development covering
-              front-end and back-end technologies, databases, REST APIs and
-              modern web application development.
-            </p>
-
-            <div class="tech-stack">
-              <span>HTML & CSS</span>
-              <span>JavaScript</span>
-              <span>ReactJS</span>
-              <span>Angular</span>
-              <span>NodeJS</span>
-              <span>Express.js</span>
-              <span>MongoDB</span>
-              <span>MySQL</span>
-              <span>REST APIs</span>
-              <span>Git</span>
-              <span>CI/CD</span>
-              <span>Agile & Scrum</span>
+        <div class="education-content">
+          <!-- SOFTUNI -->
+          <div class="education-card">
+            <div class="education-logo">
+              <img src="./images/softuni.png" alt="Software University logo" />
             </div>
 
-            <div class="education-details">
-              <p>
-                <span>JavaScript Advanced & Applications:</span>
-                Object-oriented programming, DOM manipulation, asynchronous
-                programming, REST API communication and Single Page
-                Applications.
+            <div class="education-info">
+              <div class="education-header">
+                <div>
+                  <h1>Front-End Developer with JavaScript</h1>
+
+                  <h3>Software University (SoftUni)</h3>
+                </div>
+
+                <span class="education-date">2022 - 2024</span>
+              </div>
+
+              <p class="education-description">
+                Completed professional training in JavaScript development
+                covering front-end and back-end technologies, databases, REST
+                APIs and modern web application development.
               </p>
 
-              <p>
-                <span>Front-End Development:</span>
-                Responsive web design, CSS Flexbox, React components, routing,
-                hooks and advanced techniques.
+              <div class="tech-stack">
+                <span>HTML & CSS</span>
+                <span>JavaScript</span>
+                <span>ReactJS</span>
+                <span>Angular</span>
+                <span>NodeJS</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+                <span>MySQL</span>
+                <span>REST APIs</span>
+                <span>Git</span>
+                <span>CI/CD</span>
+                <span>Agile & Scrum</span>
+              </div>
+
+              <div class="education-details">
+                <p>
+                  <span>Front-End Development:</span>
+                  Responsive web design, CSS Flexbox, React components, routing,
+                  hooks and modern frontend techniques.
+                </p>
+
+                <p>
+                  <span>Back-End Development:</span>
+                  Node.js, Express.js, MongoDB, NoSQL databases and server-side
+                  development.
+                </p>
+
+                <p>
+                  <span>Software Engineering:</span>
+                  Git, testing, CI/CD workflows and Agile methodologies.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PLOVDIV UNIVERSITY -->
+          <div class="education-card">
+            <div class="education-logo">
+              <img src="./images/pu.webp" alt="Plovdiv University logo" />
+            </div>
+
+            <div class="education-info">
+              <div class="education-header">
+                <div>
+                  <h1>Bachelor of Business Administration</h1>
+
+                  <h3>Plovdiv University "Paisii Hilendarski"</h3>
+                </div>
+
+                <span class="education-date">2018</span>
+              </div>
+
+              <p class="education-description">
+                Business education focused on information systems, technology,
+                mathematics and analytical decision-making, providing a strong
+                foundation for understanding business processes and software
+                solutions.
               </p>
 
-              <p>
-                <span>Back-End Development:</span>
-                Node.js, Express.js, MongoDB, NoSQL databases and server-side
-                concepts.
-              </p>
+              <div class="tech-stack">
+                <span>Information Systems</span>
+                <span>Business Analytics</span>
+                <span>Data Analysis</span>
+                <span>Mathematics</span>
+                <span>Statistics</span>
+                <span>Management</span>
+              </div>
 
-              <p>
-                <span>Software Engineering:</span>
-                Version control with Git, testing, CI/CD workflows and Agile
-                methodologies.
-              </p>
+              <div class="education-details">
+                <p>
+                  <span>Key Areas:</span>
+                  Information systems and technologies, business processes,
+                  analytical thinking and decision-making.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="text2">
-          <div class="image">
-            <img src="./images/pu.webp" alt="Plovdiv University" />
-          </div>
-
-          <div class="cart-educ">
-            <h1>Bachelor of Business Administration</h1>
-
-            <h3>2018 - Plovdiv University "Paisii Hilendarski"</h3>
-
-            <p>
-              Business education focused on information systems, technology,
-              mathematics and analytical decision-making, providing a strong
-              foundation for understanding business processes and software
-              solutions.
-            </p>
-
-            <div class="tech-stack">
-              <span>Information Systems</span>
-              <span>Business Analytics</span>
-              <span>Data Analysis</span>
-              <span>Mathematics</span>
-              <span>Statistics</span>
-              <span>Management</span>
-            </div>
-
-            <div class="education-details">
-              <p>
-                <span>Key areas:</span>
-                Information systems and technologies, business processes,
-                analytical thinking and decision making.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
-    
-    
+
     <footer class="footer">
       <div class="footer-line"></div>
-      <a href="contact.html" class="footer-connect">
+      <a href="index.html#contact" class="footer-connect">
         <span>·</span> Say hello <span>·</span>
       </a>
     </footer>
-    
   </body>
-  <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons.js"></script>
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
   <script src="./js/script.js"></script>
 </html>
