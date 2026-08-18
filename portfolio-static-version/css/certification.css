@@ -11,7 +11,7 @@
 
   justify-content: center;
 
-  align-items: flex-start;
+  align-items: center;
 
   /* повече въздух между header и main */
   padding: 150px 20px 90px;
@@ -29,6 +29,7 @@
   width: 100%;
 
   max-width: 1050px;
+  margin-inline: auto;
 
   text-align: center;
 }
